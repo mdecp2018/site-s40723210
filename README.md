@@ -3,12 +3,16 @@
 
 http://mdecourse.github.io/2018fall/
 
-個人網站連結:https://mdecp2018.github.io/site-s40723210
-
-個人網誌連結:https://mdecp2018.github.io/site-s40723210/blog
-
 分組示範倉儲: https://github.com/scrum-1/scrum-1.github.io
 
 設定步驟: https://github.com/scrum-1/scrum-1.github.io/wiki
 
 cpgx 網站: https://cpgx.kmol.info
+
+# 個人網址連結
+
+網站:https://mdecp2018.github.io/site-s40723210
+
+投影:https://mdecp2018.github.io/site-s40723210/reveal
+
+網誌:https://mdecp2018.github.io/site-s40723210/blog
