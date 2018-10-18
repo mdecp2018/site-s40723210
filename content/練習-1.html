@@ -67,5 +67,43 @@ $(function(){
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a></li></ul><li><a href='課程介紹.html'>課程介紹</a><ul><li><a href='git基本指令.html'>git基本指令</a><li><a href='python基本語法.html'>python基本語法</a></li></ul><li><a href='組員操作影片.html'>組員操作影片</a><ul><li><a href='Week1.html'>Week1</a><li><a href='Week2.html'>Week2</a><li><a href='Week3.html'>Week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a></li></ul><li><a href='Python 手冊.html'>Python 手冊</a><ul><li><a href='練習-1.html'>練習-1</a></li></ul><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a></li></ul></nav><section>OnShape 手冊 << <a href='OnShape 手冊.html'>Previous</a> <br /><h1>Fusion 360</h1>
-<p><a href="https://www.autodesk.com/products/fusion-360/students-teachers-educators">https://www.autodesk.com/products/fusion-360/students-teachers-educators</a> </p><br />OnShape 手冊 << <a href='OnShape 手冊.html'>Previous</a> </section></div></body></html>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a></li></ul><li><a href='課程介紹.html'>課程介紹</a><ul><li><a href='git基本指令.html'>git基本指令</a><li><a href='python基本語法.html'>python基本語法</a></li></ul><li><a href='組員操作影片.html'>組員操作影片</a><ul><li><a href='Week1.html'>Week1</a><li><a href='Week2.html'>Week2</a><li><a href='Week3.html'>Week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a></li></ul><li><a href='Python 手冊.html'>Python 手冊</a><ul><li><a href='練習-1.html'>練習-1</a></li></ul><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a></li></ul></nav><section>Python 手冊 << <a href='Python 手冊.html'>Previous</a> <a href='OnShape 手冊.html'>Next</a> >> OnShape 手冊<br /><h1>練習-1</h1>
+<p><span style="color: #3366ff;"><strong>有序可變動列表 List</strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90]
+print(ad)        
+print(ad[0])    
+print(ad[3])    
+print(ad[1:4]) </pre>
+<p>[12, 60, 25, 70, 90]<br/>12<br/>70<br/>[60, 25, 70]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90]
+ad[0]=55 # 把 55 放到列表中的第一個位置
+print(ad)</pre>
+<p>[55, 60, 25, 70, 90]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,22,60,80,90]
+ad[1:4]=[] # 連續刪除列表中從編號 1 到編號 4(不包括) 的資料
+print(ad)</pre>
+<p>[12, 90]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90]
+ad=ad+[12,33]  #也可以用ad+=[12,33]
+print(ad)
+</pre>
+<p>[12,60,25,70,90,12,33]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90] # 取得列表的長度 len(列表資料)
+bc=len(ad)
+print(bc)</pre>
+<p>5</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">adc=[[3,4,5],[6,7,8]]
+print(adc[0])
+print([adc[0][1])
+print(adc[0][0:2])
+print(adc)
+adc[0][0:2]=[5,5,5] #[0][0:2]代表[3,4,5]的[3,4]
+print(adc)</pre>
+<p>[3, 4, 5]<br/>4<br/>[3, 4]<br/>[[3, 4, 5], [6, 7, 8]]<br/>[5, 5, 5, 5], [6, 7, 8]]<br/>[[5,5,5,5,],[6,7,8]]</p>
+<p><span style="color: #3366ff;"><strong>有序不可變動列表 Tuple</strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">sd=(3,4,5)
+# sd[0]=5 # 錯誤︰Tuple的資料不可以變動
+print(sd[2])
+print(sd[0:2])</pre>
+<p>5<br/>(3, 4)</p>
+<p>其餘跟上面的內容一樣只差在不可改動</p><br />Python 手冊 << <a href='Python 手冊.html'>Previous</a> <a href='OnShape 手冊.html'>Next</a> >> OnShape 手冊</section></div></body></html>

@@ -26,6 +26,7 @@
 <p>git diff file<span> </span><span>查看修改的文檔內容</span></p>
 <p>git log<span> </span><span>查看從最近到最遠的提交日誌</span></p>
 <p>git reset --hard<span> </span><span>版本號  回退到某版本（</span><span>HEAD</span><span>指向當前版本）</span></p>
+<pre class="highlight"><span>git push origin HEAD --force 上傳目前(hard)版本</span></pre>
 <p>git reflog  <span>查看命令操作歷史</span></p>
 <p>git checkout -- file    <span>丟棄工作區文檔的修改</span></p>
 <p>git reset HEAD file    <span>丟棄暫存區的文檔</span></p>
@@ -63,7 +64,8 @@
 <p><strong><span style="color: #000080;">Arithmetic Operators</span></strong></p>
 <p>● 如果要進行下面的運算 a= a+b （用a+b的結果為a重新賦值）<br/>● 在python可以改寫成： a += b<br/>● 所以算術運算符號可以有<br/>        +=     -=     *=     /=     %=     **=     //=</p>
 <p><span style="color: #000080;"><strong>Modules or package （也稱為library）</strong></span></p>
-<p>● ”modules” or “packages”：通常是其他人寫好的函數或指令，打包成一個「工具庫」<br/> 方便分享使用。（非python內建，可能會需要下載安裝）<br/>○     本課程會用到的library: numpy (array), matplotlib (基本繪圖), basemap (地圖),<br/>         netCDF (讀nc檔)<br/>● 使用方式：import module_name<br/>○     在執行工具庫內的指令之前，就要先把modules 引進來（不然python不會認得<br/>        非內建的指令）<br/>○     使用工具庫內的指令：module_name.function (or module_name.constant)<br/>○     可以使用import module_name as xxx (xxx是你自己取的縮寫）<br/>        使用指令的語法就簡化成xxx.function，例如:<br/>             import math as m<br/>             x=m.cos(m.pi)</p><h1>組員操作影片</h1>
+<p>● ”modules” or “packages”：通常是其他人寫好的函數或指令，打包成一個「工具庫」<br/> 方便分享使用。（非python內建，可能會需要下載安裝）<br/>○     本課程會用到的library: numpy (array), matplotlib (基本繪圖), basemap (地圖),<br/>         netCDF (讀nc檔)<br/>● 使用方式：import module_name<br/>○     在執行工具庫內的指令之前，就要先把modules 引進來（不然python不會認得<br/>        非內建的指令）<br/>○     使用工具庫內的指令：module_name.function (or module_name.constant)<br/>○     可以使用import module_name as xxx (xxx是你自己取的縮寫）<br/>        使用指令的語法就簡化成xxx.function，例如:<br/>             import math as m<br/>             x=m.cos(m.pi)</p>
+<h1>組員操作影片</h1>
 <p>每週各分組組員必須將參與分組協同過程之電腦操作流程錄成影片後, 上傳至各自的 Youtube 帳號區, 並嵌入各分組網站頁面中.</p>
 <p></p>
 <h2>Week1</h2>
@@ -84,7 +86,7 @@
 <p><span>4.如下圖，之後就可以開始更新網址了</span></p>
 <p><img alt="" height="358" src="/images/d8cd77c4-15db-40c8-bfa7-99225ddaca09.png" width="547"/></p>
 <h2>Week3</h2>
-<p style="text-align: center;"><strong>如何更改網頁大標題(2018 Fall分組網站 --&gt;Githud個人網站)</strong></p>
+<p style="text-align: center;"><strong>更改網頁標題(2018 Fall分組網站 --&gt;Githud個人網站)</strong></p>
 <p style="text-align: left;">1.開啟近端的[動態]與[靜態]</p>
 <p style="text-align: left;">2.login &gt; 密碼:admin(每個人都一樣)</p>
 <p style="text-align: left;">3.點選Config ，更改標題</p>
@@ -92,9 +94,13 @@
 <p style="text-align: left;">5以下是我拍的影片教學 </p>
 <p style="text-align: left;"><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="//www.youtube.com/embed/M2ANRwM4Shc?feature=youtu" width="560"></iframe></p>
 <h2>Week4</h2>
-<p>1.</p>
-<p>2.</p>
-<p style="text-align: center;"><strong>如何更改reveal投影片教學</strong></p>
+<p style="text-align: center;"><strong>更改reveal投影片(個人倉儲&gt;s40723210)</strong></p>
+<p>1.先開啟檔案(p37)</p>
+<p>2.<span>以 </span>Leo Editor<span> 開啟 config/reveal.leo</span></p>
+<p><span>3.開啟靜態http-server. py</span></p>
+<p><span>4.修改reveal投影片的封面標題</span></p>
+<p><span>5.Save &gt; git push</span></p>
+<p><span>6.以下是我的教學影片</span></p>
 <p style="text-align: left;"><strong><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/yGOvh4XaGyE" width="560"></iframe></strong></p>
 <h2>Week5</h2>
 <p style="text-align: center;"><strong> 如何上傳教學影片</strong></p>
@@ -109,7 +115,46 @@
 <h1>Python 手冊</h1>
 <p>計算機程式教材:  <a href="http://mde.tw/cp2018/content/">http://mde.tw/cp2018/content/</a> </p>
 <p>可攜程式下載: <a href="https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing">p37.7z</a></p>
-<h1>OnShape 手冊</h1>
+<h2>練習-1</h2>
+<p><span style="color: #3366ff;"><strong>有序可變動列表 List</strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90]
+print(ad)        
+print(ad[0])    
+print(ad[3])    
+print(ad[1:4]) </pre>
+<p>[12, 60, 25, 70, 90]<br/>12<br/>70<br/>[60, 25, 70]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90]
+ad[0]=55 # 把 55 放到列表中的第一個位置
+print(ad)</pre>
+<p>[55, 60, 25, 70, 90]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,22,60,80,90]
+ad[1:4]=[] # 連續刪除列表中從編號 1 到編號 4(不包括) 的資料
+print(ad)</pre>
+<p>[12, 90]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90]
+ad=ad+[12,33]  #也可以用ad+=[12,33]
+print(ad)
+</pre>
+<p>[12,60,25,70,90,12,33]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90] # 取得列表的長度 len(列表資料)
+bc=len(ad)
+print(bc)</pre>
+<p>5</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">adc=[[3,4,5],[6,7,8]]
+print(adc[0])
+print([adc[0][1])
+print(adc[0][0:2])
+print(adc)
+adc[0][0:2]=[5,5,5] #[0][0:2]代表[3,4,5]的[3,4]
+print(adc)</pre>
+<p>[3, 4, 5]<br/>4<br/>[3, 4]<br/>[[3, 4, 5], [6, 7, 8]]<br/>[5, 5, 5, 5], [6, 7, 8]]<br/>[[5,5,5,5,],[6,7,8]]</p>
+<p><span style="color: #3366ff;"><strong>有序不可變動列表 Tuple</strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">sd=(3,4,5)
+# sd[0]=5 # 錯誤︰Tuple的資料不可以變動
+print(sd[2])
+print(sd[0:2])</pre>
+<p>5<br/>(3, 4)</p>
+<p>其餘跟上面的內容一樣只差在不可改動</p><h1>OnShape 手冊</h1>
 <p><a href="https://www.onshape.com/">https://www.onshape.com/</a> </p>
 <p>電腦輔助設計實習課程教材: <a href="http://mde.tw/cadp2018/content/">http://mde.tw/cadp2018/content/</a> </p>
 <h1>Fusion 360</h1>
