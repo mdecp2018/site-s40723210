@@ -2,8 +2,8 @@
   position: relative;
 }
 header{
-  background:#59cff8;
-  padding: 20px;
+  background-image: url("https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif");
+  padding: 30px;
 }
 confmenu
 {
@@ -188,6 +188,7 @@ ul#css3menu1 li.topmenu:hover>a,ul#css3menu1 li.topmenu a.pressed{
 
 section {
 /* position is static by default */
+background-image: url('./theme/images/home-bg.jpg');
 line-height: 180%;
 margin-left: 200px;
 width: 600px;
