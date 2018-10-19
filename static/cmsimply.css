@@ -2,7 +2,7 @@
   position: relative;
 }
 header{
-  background: #ccc;
+  background:#59cff8;
   padding: 20px;
 }
 confmenu
@@ -201,6 +201,7 @@ background-color: white;
 width: 195px;
 }
 body {
+	
   margin-bottom: 120px;
 }
 
