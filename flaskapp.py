@@ -1911,7 +1911,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 '''
     site_title, password = parse_config()
     outstring += '''
-</head><header><h1>''' + site_title + '''</h1> \
+</head><header><h1><span style="color: #16a9ea;">''' + site_title + '''</span></h1> \
 <confmenu>
 <ul>
 <li><a href="index.html">Home</a></li>
