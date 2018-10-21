@@ -202,7 +202,8 @@ background-color: white;
 width: 195px;
 }
 body {
-	
+  background-image: url("https://media.giphy.com/media/5Z1UjlpIN9cAg/giphy.gif");
+  background-size:100% 50%;
   margin-bottom: 120px;
 }
 
