@@ -1,7 +1,8 @@
 <h1>簡介</h1>
 <p>               機械設計一乙  40723210   <strong>李承澤<br/></strong>2018 Fall 計算機程式與電腦輔助設計實習課程網站</p>
 <p>上課須用到1.[ <a href="http://mde.tw/#/">mde.tw</a> ] 上圖          2.[ <a href="https://github.com/">github</a> ] 下圖</p>
-<p><img alt="" height="201" src="/images/未命名.png" width="395"/><img alt="" height="224" src="/images/未命名2.png" width="393"/></p><h2>CMSimfly 網站</h2>
+<p><img alt="" height="201" src="/images/未命名.png" width="395"/><img alt="" height="224" src="/images/未命名2.png" width="393"/></p>
+<h2>CMSimfly 網站</h2>
 <p>各組必須自行更改 Config 中的網站標題, 且每次完成近端動態網頁編輯後, 以 generate_pages 按鈕, 將動態網頁資料轉為靜態網頁資料, 之後再新增、提交並推送到遠端倉儲.</p>
 <h2>reveal 投影片</h2>
 <p>以 <a href="http://www.leoeditor.com/">Leo Editor</a> 開啟 config/reveal.leo</p>
@@ -12,7 +13,8 @@
 <p></p>
 <h1>課程介紹</h1>
 <p>        首先我們要在第一周到第九周把老師出的獨立作業給做完，一開始先到<a href="https://github.com/">github</a>用學校email申請帳號，以 s為首加上學號作為帳號例如s40723210，之後進入課程網站<a href="http://mde.tw/#/">mde.tw</a>領取作業，所有上課內容都以數位形式存在，包括網站與教學影片都在<a href="https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos">youtube</a>內，剛開始我們會不懂git的指令，所以要自己上網學習，我有整理了一些git的指令，每一周都要上傳一部影片，上傳自己的練習操作影片或是上傳自己教學影片，老師會在每一周都教學一些不同的東西，像是第二周就是把git倉儲的網站創造出來，還有如何更新內容，而第三周是教學如何以ShareX截圖與拍影片，老師的影片教學都是以上課內容為主，是以ShareX來一邊教我們一邊拍影片上傳的，所以如果當天上課有不懂的話可以到影片中，仔細聆聽與觀看來明白上課內容。</p>
-<p>再來是要開始練習Python()的指令了，要一步一步的來學習</p><h2>git基本指令</h2>
+<p>再來是要開始練習Python()的指令了，要一步一步的來學習</p>
+<h2>git基本指令</h2>
 <ol></ol>
 <p>mkdir name 創建一個文檔夾</p>
 <p>rm file 刪除</p>
@@ -157,8 +159,48 @@ print(adc)</pre>
 print(sd[2])
 print(sd[0:2])</pre>
 <p>5<br/>(3, 4)</p>
-<p>其餘跟上面的內容一樣只差在不可改動</p>
-<h1>OnShape 手冊</h1>
+<p>其餘跟上面的內容相似只差於不可改動</p>
+<h2>練習-2</h2>
+<p><span style="color: #3366ff;"><strong># 集合的運用</strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">s1={3,4,5}
+print(3 in s1)
+print(10 in s1)
+print(10 not in s1)</pre>
+<p>True<br/>False<br/>True</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">s1={3,4,5}
+s2={4,5,6,7}
+s3=s1&amp;s2 # 交集︰取兩個集合中，相同的資料
+print(s3)
+s3=s1|s2 # 聯集︰取兩個合中的所有資料，但不重複取
+print(s3)
+s3=s1-s2 # 差集︰從 s1 中，減去和 s2 重疊的部分
+print(s3)
+s3=s1^s2 # 反交集︰取兩個集合中，重複的部分
+print(s3)</pre>
+<p>{4, 5}<br/>{3, 4, 5, 6, 7}<br/>{3}<br/>{3, 6, 7}</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">s=set("Hello") # 把字串中的字母折拆成集合︰ set(字串)
+print(s)
+print("H" in s)
+print("A" in s)</pre>
+<p>{'H', 'e', 'l', 'o'}<br/>True<br/>False</p>
+<p><span style="color: #3366ff;"><strong>#字典的運用︰key-value 配對</strong></span><span style="color: #3366ff;"><strong></strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">dic={"apple":"蘋果","bug":"蟲蟲"}
+print(dic)
+print(dic["apple"])
+dic["apple"]="小蘋果"
+print(dic["apple"])</pre>
+<p>{'apple': '蘋果', 'bug': '蟲蟲'}<br/>蘋果<br/>小蘋果</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">dic={"apple":"蘋果","bug":"蟲蟲"}
+print("apple" in dic) # 判斷 key 是否存在
+print("test" in dic)
+print("test" not in dic)
+del dic["apple"] # del(刪除)字典中的鍵值對 (key-value pair)
+print(dic)
+</pre>
+<p>True<br/>False<br/>True<br/>{'bug': '蟲蟲'}</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">dic={x:x*2 for x in [3,4,5]} # 從列表[3,4,5]的資料中產生字典
+print(dic)</pre>
+<p>{3: 6, 4: 8, 5: 10}</p><h1>OnShape 手冊</h1>
 <p><a href="https://www.onshape.com/">https://www.onshape.com/</a> </p>
 <p>電腦輔助設計實習課程教材: <a href="http://mde.tw/cadp2018/content/">http://mde.tw/cadp2018/content/</a> </p>
 <h1>Fusion 360</h1>
