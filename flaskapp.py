@@ -1918,6 +1918,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 <li><a href="sitemap.html">Site Map</a></li>
 <li><a href="./../reveal/index.html">reveal</a></li>
 <li><a href="./../blog/index.html">blog</a></li>
+<li><a href="./../music/index.html">music</a></li>
 '''
     outstring += '''
 </ul>
