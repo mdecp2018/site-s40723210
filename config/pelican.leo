@@ -53,8 +53,8 @@
 <v t="leo.20170710101854.1"><vh>@edit article.html</vh></v>
 </v>
 </v>
-<v t="leo.20170710015511.1"><vh>編輯 plugin</vh>
-<v t="leo.20170710015523.1" a="E"><vh>@path plugin</vh>
+<v t="leo.20170710015511.1" a="E"><vh>編輯 plugin</vh>
+<v t="leo.20170710015523.1"><vh>@path plugin</vh>
 <v t="leo.20170710015523.2" a="E"><vh>@path tipue_search</vh>
 <v t="leo.20170710015523.3"><vh>@edit tipue_search.py</vh></v>
 </v>
@@ -70,6 +70,14 @@
 <v t="leo.20180115115910.1" a="E"><vh>2018</vh>
 <v t="leo.20180423103639.1" a="E"><vh>2018 Fall CP 課程</vh>
 <v t="leo.20180423103656.1"><vh>@edit 20180718.md</vh></v>
+<v t="leo.20181101140733.1"><vh>@edit 20180910.md</vh></v>
+<v t="leo.20181101140800.1"><vh>@edit 20180917.md</vh></v>
+<v t="leo.20181101140823.1"><vh>@edit 20180924.md</vh></v>
+<v t="leo.20181101140830.1"><vh>@edit 20181001.md</vh></v>
+<v t="leo.20181101140837.1"><vh>@edit 20181008.md</vh></v>
+<v t="leo.20181101140847.1"><vh>@edit 20181015.md</vh></v>
+<v t="leo.20181101140857.1"><vh>@edit 20181022.md</vh></v>
+<v t="leo.20181101145209.1"><vh>@edit 20181029.md</vh></v>
 </v>
 </v>
 </v>

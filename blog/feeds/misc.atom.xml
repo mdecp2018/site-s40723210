@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>s40723210 網誌 - Misc</title><link href="https://mdecp2018.github.io/site-s40723210/blog/" rel="alternate"></link><link href="https://mdecp2018.github.io/site-s40723210/blog/feeds/misc.atom.xml" rel="self"></link><id>https://mdecp2018.github.io/site-s40723210/blog/</id><updated>2018-09-10T11:00:00+08:00</updated><entry><title>2018 Fall 分組網誌</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>NFUMDE</name></author><id>tag:mdecp2018.github.io,2018-09-10:/site-s40723210/blog/2018-Fall-Project-Blog.html</id><summary type="html">&lt;p&gt;2018 Fall 開始將網際內容管理、投影片與網誌進行整合.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>s40723210 網誌 - Misc</title><link href="https://mdecp2018.github.io/site-s40723210/blog/" rel="alternate"></link><link href="https://mdecp2018.github.io/site-s40723210/blog/feeds/misc.atom.xml" rel="self"></link><id>https://mdecp2018.github.io/site-s40723210/blog/</id><updated>2018-10-29T13:20:00+08:00</updated><entry><title>Week-8</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W8.html" rel="alternate"></link><published>2018-10-29T13:20:00+08:00</published><updated>2018-10-29T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-29:/site-s40723210/blog/2018-Fall-Project-Blog-W8.html</id><summary type="html">&lt;p&gt;github問題&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;github問題&lt;/p&gt;
+
+
+&lt;h2&gt;w8&lt;/h2&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;</content><category term="W8"></category></entry><entry><title>Week-7</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W7.html" rel="alternate"></link><published>2018-10-22T13:20:00+08:00</published><updated>2018-10-22T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-22:/site-s40723210/blog/2018-Fall-Project-Blog-W7.html</id><summary type="html">&lt;p&gt;github問題&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;github問題&lt;/p&gt;
+
+
+&lt;h2&gt;應急處理:&lt;/h2&gt;
+&lt;p&gt;1.因為githud無法登入&lt;/p&gt;
+&lt;p&gt;2.所以利用 Fossil SCM 建立區域網路&lt;/p&gt;
+&lt;p&gt;3.開始教學如何使用Fossil SCM，來更新網頁&lt;/p&gt;
+&lt;p&gt;4.如果githud之後都不能使用就只能用Fossil SCM&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;由於github在這禮拜突然故障，所以老師找出其他方法解決並探討，剛開始會發現github沒辦法登入，聽到老師說才知道是壞掉了，希望可以趕快回復，這樣就不用讓我們使用Fossli SCM 了。&lt;/p&gt;</content><category term="W7"></category></entry><entry><title>Week-6</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W6.html" rel="alternate"></link><published>2018-10-15T13:20:00+08:00</published><updated>2018-10-15T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-15:/site-s40723210/blog/2018-Fall-Project-Blog-W6.html</id><summary type="html">&lt;p&gt;修正bug的發生&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;修正bug的發生&lt;/p&gt;
+
+
+&lt;h2&gt;更新CMSimfly 倉儲中的flaskspp.py&lt;/h2&gt;
+&lt;p&gt;1.先到mde.tw &amp;gt; 18CP &amp;gt; 工具 &amp;gt; CMSimfly&lt;/p&gt;
+&lt;p&gt;2.進入https://github.com/chiamingyen/cmsimfly&lt;/p&gt;
+&lt;p&gt;3.點flaskapp.py &amp;gt; Raw &amp;gt; Ctrl+a(全選) &amp;gt; 複製&lt;/p&gt;
+&lt;p&gt;4.到自己的site-s40723210，打開flaskapp.py把裡面刪掉&lt;/p&gt;
+&lt;p&gt;5.貼上，Save &amp;gt; git push&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;第六周開始強調要升級，最新的CMSimfly倉儲中的flaskapp.py，因為這幾周來同學碰到了許多的bug，所以老師有更新很多處理bug的東西，我們就要去更新才不會出現這一些bug。&lt;/p&gt;</content><category term="W6"></category></entry><entry><title>Week-5</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W5.html" rel="alternate"></link><published>2018-10-08T13:20:00+08:00</published><updated>2018-10-08T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-08:/site-s40723210/blog/2018-Fall-Project-Blog-W5.html</id><summary type="html">&lt;p&gt;python 課程說明&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;python 課程說明&lt;/p&gt;
+
+
+&lt;h2&gt;python教材:&lt;/h2&gt;
+&lt;p&gt;1.到mde.tw  &amp;gt; 18CP &amp;gt; 簡介 &amp;gt; Python &amp;gt; Python 教材&lt;/p&gt;
+&lt;p&gt;2.閱讀並往下滾動，到(開始練習 print() 用法, 並著手建立函式)&lt;/p&gt;
+&lt;p&gt;3.開始練習，並且把[Ex1]  [Ex2]  [Ex3]  [Ex4]給學會&lt;/p&gt;
+&lt;p&gt;4.我在&lt;a href="https://mdecp2018.github.io/site-s40723210/content/%E7%B7%B4%E7%BF%92-1.html"&gt;Python 手冊&lt;/a&gt; 中有練習，可以到那裡參考&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;第五周又要開始學新的東西了，現在要學python指令了，一個未完又要開始學另一個了，實在是有點太多了，因為我完全就是沒有底子的人，所以要把指令都用熟練，是要花很多時間的，我只能盡力而為了。&lt;/p&gt;</content><category term="W5"></category></entry><entry><title>Week-4</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W4.html" rel="alternate"></link><published>2018-10-01T13:20:00+08:00</published><updated>2018-10-01T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-01:/site-s40723210/blog/2018-Fall-Project-Blog-W4.html</id><summary type="html">&lt;p&gt;reveal 課程說明&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;reveal 課程說明&lt;/p&gt;
+
+
+&lt;h2&gt;更改reveal投影片&lt;/h2&gt;
+&lt;p&gt;1.先開啟檔案(p37)&lt;/p&gt;
+&lt;p&gt;2.以 Leo Editor 開啟 config/reveal.leo&lt;/p&gt;
+&lt;p&gt;3.開啟靜態http-server. py&lt;/p&gt;
+&lt;p&gt;4.修改reveal投影片的封面標題&lt;/p&gt;
+&lt;p&gt;5.Save &amp;gt; git push&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;第四周是要開始學習如何更改reveal投影片，跟改CMSimfly完全不相同，是要以 Leo Editor來更改內容，一開始我完全的不懂該怎麼使用，我就一直看老師的操作影片，慢慢的我就知道該如何使用了。&lt;/p&gt;</content><category term="W4"></category></entry><entry><title>Week-3</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W3.html" rel="alternate"></link><published>2018-09-24T13:20:00+08:00</published><updated>2018-09-24T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-09-24:/site-s40723210/blog/2018-Fall-Project-Blog-W3.html</id><summary type="html">&lt;p&gt;2018/09/24中秋節放假~&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;2018/09/24中秋節放假~&lt;/p&gt;
+
+
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;我自己有操作更改網站標題，基本上都是一樣的操作流程，我有拍影片可以到我的網站看。&lt;/p&gt;</content><category term="W3"></category></entry><entry><title>Week-2</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W2.html" rel="alternate"></link><published>2018-09-17T13:20:00+08:00</published><updated>2018-09-17T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-09-17:/site-s40723210/blog/2018-Fall-Project-Blog-W2.html</id><summary type="html">&lt;p&gt;如何領取作業, 如何管理 CMSimfly 作業倉儲&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;如何領取作業, 如何管理 CMSimfly 作業倉儲&lt;/p&gt;
+
+
+&lt;h2&gt;老師的mdecp2018作業倉儲&lt;/h2&gt;
+&lt;p&gt;1.先登入github帳號&lt;/p&gt;
+&lt;p&gt;2.到https://classroom.github.com/a/wlLbt5TQ 領取個人倉儲作業&lt;/p&gt;
+&lt;p&gt;3.在site-s40723210的 settings &amp;gt; Branches &amp;gt; 把branches改為gh-pages&lt;/p&gt;
+&lt;p&gt;4.之後就可以開始更新網址了&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;第二週學習如何管理期中作業倉儲的網站內容以及投影片內容，每週必須放上進度，要時常去管理自己的CMSimfly網站，做法是平常上課教的，可以一步一步來完成。&lt;/p&gt;</content><category term="W2"></category></entry><entry><title>Week-1</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W1.html" rel="alternate"></link><published>2018-09-10T13:20:00+08:00</published><updated>2018-09-10T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-09-10:/site-s40723210/blog/2018-Fall-Project-Blog-W1.html</id><summary type="html">&lt;p&gt;如何利用 p37 中的 git 建立個人的 Github Pages 網站&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;如何利用 p37 中的 git 建立個人的 Github Pages 網站&lt;/p&gt;
+
+
+&lt;h2&gt;開始學習github&lt;/h2&gt;
+&lt;p&gt;1.建立github帳號&lt;/p&gt;
+&lt;p&gt;2.建立倉儲: s40723210.github.io&lt;/p&gt;
+&lt;p&gt;2.git clone  https://github.com/mdecourse/2018fall&lt;/p&gt;
+&lt;p&gt;3.git clone  https://github.com/s40723210/s40723210.github.io&lt;/p&gt;
+&lt;p&gt;4.從2018fall資料夾複製裡面的檔案，排除.git和README.me，並貼到自己的資料夾內&lt;/p&gt;
+&lt;p&gt;5.git status(檢查狀態)&amp;gt;git add .(增加)&amp;gt;git commit -m "名稱"( 提交)&amp;gt;git push (推送)&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;第一週開始接觸github有點不習慣，因為我完全沒有碰過，老師說的我完全的聽不懂，但是之後其實只要看教學影片慢慢的就會了，所以我覺得應該是撐得住。&lt;/p&gt;</content><category term="W1"></category></entry><entry><title>2018 Fall 分組網誌</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>NFUMDE</name></author><id>tag:mdecp2018.github.io,2018-09-10:/site-s40723210/blog/2018-Fall-Project-Blog.html</id><summary type="html">&lt;p&gt;2018 Fall 開始將網際內容管理、投影片與網誌進行整合.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2018 Fall 開始將網際內容管理、投影片與網誌進行整合.&lt;/p&gt;
 
 
