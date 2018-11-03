@@ -4,11 +4,11 @@
 
 
 &lt;h2&gt;同步倉儲gitlab&lt;/h2&gt;
-&lt;p&gt;1.先到&lt;a href="https://about.gitlab.com/"&gt;gitlab&lt;/a&gt;可以用自己的github帳號登入
-2.之後在gitlab創建一個倉儲
-3.由於gitlab的readme和github的readme是不一樣的
-4.所以要先處理一些程序，才能夠同步倉儲內容
-5.我還不太會用就先沒有操作了&lt;/p&gt;
+&lt;p&gt;1.先到&lt;a href="https://about.gitlab.com/"&gt;gitlab&lt;/a&gt;可以用自己的github帳號登入&lt;/p&gt;
+&lt;p&gt;2.之後在gitlab創建一個倉儲&lt;/p&gt;
+&lt;p&gt;3.由於gitlab的readme和github的readme是不一樣的&lt;/p&gt;
+&lt;p&gt;4.所以要先處理一些程序，才能夠同步倉儲內容&lt;/p&gt;
+&lt;p&gt;5.我還不太會用就先沒有操作了&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
 &lt;p&gt;第八周開始使用gitlab，這樣可以同時push兩個不同的倉儲，就可以避免一個倉儲壞掉了就沒有了，只是要同步實在是很困難，我現在也還沒辦法同步，看來要一段時間才能學會git remote add了。&lt;/p&gt;</content><category term="W8"></category></entry><entry><title>Week-7</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W7.html" rel="alternate"></link><published>2018-10-22T13:20:00+08:00</published><updated>2018-10-22T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-22:/site-s40723210/blog/2018-Fall-Project-Blog-W7.html</id><summary type="html">&lt;p&gt;github問題&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;github問題&lt;/p&gt;
