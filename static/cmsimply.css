@@ -202,8 +202,13 @@ background-color: white;
 width: 195px;
 }
 body {
-  background-image: url("https://media.giphy.com/media/5Z1UjlpIN9cAg/giphy.gif");
-  background-size: 100% 50%;
+  background-image:url("https://pa1.narvii.com/6895/c91e7770be676ec7d5aab1c1b6a9f1ead09a470br1-500-375_hq.gif"),
+							  url("https://78.media.tumblr.com/f0c8a9bc15826284e1ebc70f6d5daa06/tumblr_n1l3uy8oJy1rfb1y5o1_400.gif"),
+                              url("http://i.sheyinghouqi.com/uploadfile/2009/0910/20090910100158721.jpg");
+  background-size: 50%,20%,100%;
+  background-position: top 0px right 0px , top 450px right 10px;
+  background-repeat:repeat,no-repeat,repeat;
+  background-attachment: fixed;
   margin-bottom: 120px;
 }
 
