@@ -6,7 +6,9 @@
 
 網誌:https://mdecp2018.github.io/site-s40723210/blog
 
-gitlad:https://gitlab.com/s40723210/cp2018-s40723210
+gitlad:https://gitlab.com/s40723210/cp2018-s40723210/tree/gh-pages
+
+倉儲:https://github.com/mdecp2018/site-s40723210
 
 # 2018fall
 2018 Fall 計算機程式與電腦輔助設計實習課程分組倉儲
