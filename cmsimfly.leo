@@ -53,7 +53,7 @@
 <v t="leo.20180625155248.1"><vh>@edit pybean.py</vh></v>
 <v t="leo.20180625155728.1"><vh>@edit schema.sql</vh></v>
 <v t="amd.20160718130611.1"><vh>@edit .gitignore</vh></v>
-<v t="amd.20160717222221.1"><vh>@path static</vh>
+<v t="amd.20160717222221.1" a="E"><vh>@path static</vh>
 <v t="leo.20180718091411.1"><vh>@edit cmsimply.css</vh></v>
 <v t="amd.20160717222242.1"><vh>@edit axuploader.js</vh></v>
 <v t="amd.20160718125932.1"><vh>@edit viewstl.html</vh></v>
@@ -2477,7 +2477,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 '''
     site_title, password = parse_config()
     outstring += '''
-&lt;/head&gt;&lt;header&gt;&lt;h1&gt;&lt;span style="color: #16a9ea;"&gt;''' + site_title + '''&lt;/span&gt;&lt;/h1&gt; \
+&lt;/head&gt;&lt;header&gt;&lt;h1&gt;&lt;span style="color: #16a9ea;"&gt;&lt;strong&gt;''' + site_title + '''&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt; \
 &lt;confmenu&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
