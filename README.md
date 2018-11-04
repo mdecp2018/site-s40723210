@@ -2,10 +2,11 @@
 
 網站:https://mdecp2018.github.io/site-s40723210
 
-投影:https://mdecp2018.github.io/site-s40723210/reveal
+簡報:https://mdecp2018.github.io/site-s40723210/reveal
 
 網誌:https://mdecp2018.github.io/site-s40723210/blog
 
+gitlad:https://gitlab.com/s40723210/cp2018-s40723210
 
 # 2018fall
 2018 Fall 計算機程式與電腦輔助設計實習課程分組倉儲
