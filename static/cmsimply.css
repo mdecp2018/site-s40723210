@@ -2,11 +2,7 @@ container {
   position: relative;
 }
 header{
-  background-image: url("https://66.media.tumblr.com/bb3b092f63965cc9404e5f7a8c11e55e/tumblr_p2i7q3lNsI1swjm3io7_540.gif"),
-                                url("http://bestanimations.com/Animals/Mammals/Dogs/pugs/funny-cute-animated-pug-gif-37.gif"),
-								url("https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif");
-  background-position: top -35px right 100px, top -170px right 770px , top -40px right 90px;
-  background-repeat:no-repeat,no-repeat,repeat;
+  background-image: url("https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif");
   padding: 30px;
 }
 confmenu
@@ -206,13 +202,9 @@ background-color: white;
 width: 195px;
 }
 body {
-  background-image:url("https://pa1.narvii.com/6895/c91e7770be676ec7d5aab1c1b6a9f1ead09a470br1-500-375_hq.gif"),
-							  url("https://78.media.tumblr.com/f0c8a9bc15826284e1ebc70f6d5daa06/tumblr_n1l3uy8oJy1rfb1y5o1_400.gif"),
-                              url("https://66.media.tumblr.com/6c0a0ea5704878c35ead6338656fa1ee/tumblr_p2i7q3lNsI1swjm3io5_640.gif"),
-							  url("http://i.sheyinghouqi.com/uploadfile/2009/0910/20090910100158721.jpg");
-  background-size: 50%,19%,60%,100%;
-  background-position: top 0px right 0px , top 470px right 1272px, top 10px right -120px;
-  background-repeat:repeat,no-repeat,no-repeat,no-repeat;
+  background-image:url("http://i.sheyinghouqi.com/uploadfile/2009/0910/20090910100158721.jpg"),linear-gradient(to left, rgba(220, 20, 60, 1),  rgba(255, 255, 0, 0.6));
+  background-size: 100%;
+  background-repeat:no-repeat;
   background-attachment: fixed;
   margin-bottom: 120px;
 }
