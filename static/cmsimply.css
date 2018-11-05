@@ -3,7 +3,8 @@ container {
 }
 header{
   background-image: url("https://media.giphy.com/media/OK5LK5zLFfdm/giphy.gif");
-  padding: 30px;
+  background-position:top -6px right 90px;
+  padding: 25px;
 }
 confmenu
 {
@@ -202,9 +203,11 @@ background-color: white;
 width: 195px;
 }
 body {
-  background-image:url("http://i.sheyinghouqi.com/uploadfile/2009/0910/20090910100158721.jpg"),linear-gradient(to left, rgba(220, 20, 60, 1),  rgba(255, 255, 0, 0.6));
-  background-size: 100%;
-  background-repeat:no-repeat;
+  background-image:url("https://78.media.tumblr.com/f0c8a9bc15826284e1ebc70f6d5daa06/tumblr_n1l3uy8oJy1rfb1y5o1_400.gif"),
+                              url("http://i.sheyinghouqi.com/uploadfile/2009/0910/20090910100158721.jpg");
+  background-size: 23%,100%;
+  background-repeat:no-repeat,repeat;
+  background-position: top 420px right 10px , top 0px right 0px;
   background-attachment: fixed;
   margin-bottom: 120px;
 }
