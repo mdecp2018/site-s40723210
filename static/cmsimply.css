@@ -203,11 +203,7 @@ background-color: white;
 width: 195px;
 }
 body {
-  background-image:url("https://78.media.tumblr.com/f0c8a9bc15826284e1ebc70f6d5daa06/tumblr_n1l3uy8oJy1rfb1y5o1_400.gif"),
-                              url("http://i.sheyinghouqi.com/uploadfile/2009/0910/20090910100158721.jpg");
-  background-size: 23%,100%;
-  background-repeat:no-repeat,repeat;
-  background-position: top 420px right 10px , top 0px right 0px;
+  background-image:linear-gradient(to right, rgb(254,255,255) 0%, rgb(221,241,249) 39%, rgb(221,241,249) 45%, rgb(160,216,239) 100%);
   background-attachment: fixed;
   margin-bottom: 120px;
 }
