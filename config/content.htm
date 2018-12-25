@@ -274,8 +274,33 @@ app = DemoApp()
 app.run()
 </pre>
 <p><img alt="" height="385" src="/images/p37_22-42-17.png" width="500"/><br/><br/></p>
-<p></p>
-<p></p><h1>Python 手冊</h1>
+<p>我進行了一些的改動</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">    def step(self):
+        """
+        Every now and then a bunny hops...
+        """
+        if random() &lt; 0.01:
+            self.x += randint(-20,20)
+            self.y += randint(-20,20)</pre>
+<p>改成了如下<br/><br/></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">    def step(self):
+        """
+        Every now and then a bunny hops...
+        """
+        if random() &lt; 0.01:
+            self.x += randint(-40,40)
+            self.y += randint(-40,40)</pre>
+<p>兔子的跳動範圍就變大了</p>
+<p>改成如下</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">    def step(self):
+        """
+        Every now and then a bunny hops...
+        """
+        if random() &lt; 0.04:
+            self.x += randint(-20,20)
+            self.y += randint(-20,20)</pre>
+<p>兔子的跳動頻率就變快了</p>
+<p>所以我思考了可以做一個捕捉的遊戲，進行更改兔子的動作而加深難度，我也想到了可以把兔子移動到某一個東西上面，就可以更改了一些狀況。</p><h1>Python 手冊</h1>
 <p>計算機程式教材:  <a href="http://mde.tw/cp2018/content/">http://mde.tw/cp2018/content/</a> </p>
 <p>可攜程式下載: <a href="https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing">p37.7z</a></p>
 <h2>練習-1</h2>
