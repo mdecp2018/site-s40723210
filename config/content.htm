@@ -207,7 +207,7 @@
 <p><span>我們的專題就是一個小遊戲，老師有用了一個kmolgame的leo來讓我們了解，但是說實在的，我們頂多改內建的程式變換圖片或速度或者是大小而已，要我們做出一個小遊戲的話，要有說明那些指令是做甚麼的，可是說明大多都是英文，而且我們對python的語法一竅不通，是需要一點時間才能理解的，所以可能我們做出來的遊戲會遇到一堆的問題。</span></p>
 <p>week14</p>
 <p><span>目前我有把一些kmolgame的範例，改成我想做的小遊戲，可是有很多指令是範例裡面沒有的，剛好今天是交python語法，我們學到的東西是if判斷，當我們在密碼輸入bg3時會出現hellow world，有多寫一個else，就是用來判斷輸入的，在遊戲可以做出猜數字的程式，有一點用不太到呢。</span></p>
-<h2>專案開發-1</h2>
+<h2>遊戲解析-1</h2>
 <p>剛開始有老師給個範例<a href="https://github.com/mdecourse/kmolgame">ggame</a> 來讓我們了解</p>
 <p><img alt="" height="212" src="/images/p37_22-43-38.png" width="400"/></p>
 <p>裡面有很多的範例像是完整的game1 如下</p>
@@ -325,7 +325,7 @@ app.run()
             # only drag one bunny at a time - consume the event
             event.consumed = True</pre>
 <p>這樣子就可以讓兔子更難的被點中了</p>
-<h2>專案開發-2</h2>
+<h2>遊戲解析-2</h2>
 <p>下面這個是一個會跑的球的程式碼，案空白鍵可以暫停，也可以上下移動，案r可以往返像跑，滑鼠點會順移到滑鼠位子</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import (
     App, 
@@ -515,8 +515,8 @@ myapp.listenKeyEvent('keydown', 'right arrow', self.ballright)
 myapp.listenKeyEvent('keydown', 'left arrow', self.ballleft)
     
 myapp.run(step)</pre>
-<p>就可以把這個指令放進我的遊戲裡面了，可以有很多的語法要改</p>
-<h2>專案開發-3</h2>
+<p>就可以把這個指令放進我的遊戲裡面了，可是有很多不同的語法要改</p>
+<h2>遊戲解析-3</h2>
 <p>如下是一個可以按空白建起飛的程式，他預設是會一直旋轉往斜下，因為我用不到斜下，所以我會試著改裡面的程式</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 
@@ -1138,8 +1138,67 @@ class Spacewar(App):
 app = Spacewar()
 app.run()
 </pre>
-<p><img alt="" height="455" src="/images/p37_20-30-27.png" width="600"/></p><h2>專案結果-2</h2>
-<p></p>
+<p><img alt="" height="455" src="/images/p37_20-30-27.png" width="600"/></p>
+<h2>專案結果-2</h2>
+<p>如下這是一個兔子可以上下左右移動的程式，未來我打算試著有一個物件可以抓兔子，而這個物件是可以上下左右移動的</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import (
+    App, 
+    Color, 
+    Sound,
+    LineStyle, 
+    Sprite, 
+    RectangleAsset, 
+    ImageAsset,
+    CircleAsset, 
+    EllipseAsset, 
+    PolygonAsset,
+    SoundAsset,
+)
+ 
+myapp = App()
+ 
+ball_asset = ImageAsset("images/bunny.png")
+ball = Sprite(ball_asset, (0, 0))
+ball.scale = 1.5
+# custom attributes
+ball.direction = 10
+ 
+def ball_y_down():
+    ball.y += 10
+     
+def ball_y_up():
+    ball.y -= 10
+ 
+def ball_x_right():
+    ball.x += 20
+ 
+def ball_x_left():
+    ball.x -= 20
+ 
+# Set up function for handling screen refresh
+def step():
+  pass
+ 
+def ballDown(event):
+    ball_y_down()
+     
+def ballUp(event):
+    ball_y_up()
+ 
+def ballleft(event):
+    ball_x_left()
+ 
+def ballright(event):
+    ball_x_right()
+ 
+myapp.listenKeyEvent('keydown', 'down arrow', ballDown)
+myapp.listenKeyEvent('keydown', 'up arrow', ballUp)
+myapp.listenKeyEvent('keydown', 'right arrow', ballright)
+myapp.listenKeyEvent('keydown', 'left arrow', ballleft)
+     
+myapp.run(step)
+</pre>
+<p><br/><br/></p>
 <h1>Python 手冊</h1>
 <p>計算機程式教材:  <a href="http://mde.tw/cp2018/content/">http://mde.tw/cp2018/content/</a> </p>
 <p>可攜程式下載: <a href="https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing">p37.7z</a></p>
