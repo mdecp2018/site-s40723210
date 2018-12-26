@@ -326,7 +326,7 @@ app.run()
             event.consumed = True</pre>
 <p>這樣子就可以讓兔子更難的被點中了</p>
 <h2>專案開發-2</h2>
-<p>如下是一個可以按空白建起飛的程式，他預設是會一直旋轉往斜下，因為我用不到斜下，所以我會把裡面的程式改了一些</p>
+<p>如下是一個可以按空白建起飛的程式，他預設是會一直旋轉往斜下，因為我用不到斜下，所以我會試著改裡面的程式</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 
 class SpaceShip(Sprite):
@@ -390,7 +390,9 @@ class SpaceGame(App):
 myapp = SpaceGame()
 myapp.run()</pre>
 <p><img alt="" height="396" src="/images/p37_11-54-02.png" width="500"/></p>
-<p>這是改動後的樣子，飛機就不會在旋轉了<img alt="" height="488" src="/images/p37_11-54-28.png" width="500"/></p>
+<p>飛機案空白鍵的樣子如下，我也想在專題中加入這種性能</p>
+<p><img alt="" height="488" src="/images/p37_11-54-28.png" width="500"/></p>
+<p>如下這是改動後的樣子，是把飛機旋轉和移動的性能關掉</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 
 class SpaceShip(Sprite):
@@ -452,7 +454,40 @@ class SpaceGame(App):
 
         
 myapp = SpaceGame()
-myapp.run()</pre><h1>Python 手冊</h1>
+myapp.run()</pre>
+<p><img alt="" height="446" src="/images/p37_11-52-50.png" width="500"/></p>
+<p>再來看飛機案空白鍵的樣子，要想該如何讓我的專題也由同樣的功能</p>
+<p><img alt="" height="507" src="/images/p37_18-10-36.png" width="500"/></p>
+<p>如下這是飛機案空白鍵的執行指令，想辦法拉進我的專題裡就可有同樣效果了</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
+        Frame(227,0,65,125), 4, 'vertical')
+
+    def __init__(self, position):
+        super().__init__(SpaceShip.asset, position)
+        self.thrust = 0
+        self.thrustframe = 1
+        SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
+        SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
+
+    def step(self):
+        if self.thrust == 1:
+            self.setImage(self.thrustframe)
+            self.thrustframe += 1
+            if self.thrustframe == 4:
+                self.thrustframe = 1
+        else:
+            self.setImage(0)
+
+    def thrustOn(self, event):
+        self.thrust = 1
+        
+    def thrustOff(self, event):
+        self.thrust = 0
+
+
+</pre>
+<p></p>
+<p></p><h1>Python 手冊</h1>
 <p>計算機程式教材:  <a href="http://mde.tw/cp2018/content/">http://mde.tw/cp2018/content/</a> </p>
 <p>可攜程式下載: <a href="https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing">p37.7z</a></p>
 <h2>練習-1</h2>

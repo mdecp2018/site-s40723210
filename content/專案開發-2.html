@@ -69,7 +69,7 @@ $(function(){
 </ul>
 </confmenu></header>
 <div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a></li></ul><li><a href='課程介紹.html'>課程介紹</a><ul><li><a href='git基本指令.html'>git基本指令</a><li><a href='python基本語法.html'>python基本語法</a></li></ul><li><a href='組員操作影片.html'>組員操作影片</a><ul><li><a href='Week1.html'>Week1</a><li><a href='Week2.html'>Week2</a><li><a href='Week3.html'>Week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a><li><a href='更多操作影片-1.html'>更多操作影片-1</a><li><a href='更多操作影片-2.html'>更多操作影片-2</a><li><a href='更多操作影片-3.html'>更多操作影片-3</a></li></ul><li><a href='分組專案(個人).html'>分組專案(個人)</a><ul><li><a href='倉儲規劃.html'>倉儲規劃</a><li><a href='倉儲格式-1.html'>倉儲格式-1</a><li><a href='倉儲格式-2.html'>倉儲格式-2</a><li><a href='每周心得.html'>每周心得</a><li><a href='專案開發-1.html'>專案開發-1</a><li><a href='專案開發-2.html'>專案開發-2</a></li></ul><li><a href='Python 手冊.html'>Python 手冊</a><ul><li><a href='練習-1.html'>練習-1</a><li><a href='練習-2.html'>練習-2</a><li><a href='練習-3.html'>練習-3</a><li><a href='練習-4.html'>練習-4</a><li><a href='練習-5.html'>練習-5</a></li></ul><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a></li></ul></nav><section>專案開發-1 << <a href='專案開發-1.html'>Previous</a> <a href='Python 手冊.html'>Next</a> >> Python 手冊<br /><h1>專案開發-2</h1>
-<p>如下是一個可以按空白建起飛的程式，他預設是會一直旋轉往斜下，因為我用不到斜下，所以我會把裡面的程式改了一些</p>
+<p>如下是一個可以按空白建起飛的程式，他預設是會一直旋轉往斜下，因為我用不到斜下，所以我會試著改裡面的程式</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 
 class SpaceShip(Sprite):
@@ -133,7 +133,9 @@ class SpaceGame(App):
 myapp = SpaceGame()
 myapp.run()</pre>
 <p><img alt="" height="396" src="./../images/p37_11-54-02.png" width="500"/></p>
-<p>這是改動後的樣子，飛機就不會在旋轉了<img alt="" height="488" src="./../images/p37_11-54-28.png" width="500"/></p>
+<p>飛機案空白鍵的樣子如下，我也想在專題中加入這種性能</p>
+<p><img alt="" height="488" src="./../images/p37_11-54-28.png" width="500"/></p>
+<p>如下這是改動後的樣子，是把飛機旋轉和移動的性能關掉</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
 
 class SpaceShip(Sprite):
@@ -195,4 +197,37 @@ class SpaceGame(App):
 
         
 myapp = SpaceGame()
-myapp.run()</pre><br />專案開發-1 << <a href='專案開發-1.html'>Previous</a> <a href='Python 手冊.html'>Next</a> >> Python 手冊</section></div></body></html>
+myapp.run()</pre>
+<p><img alt="" height="446" src="./../images/p37_11-52-50.png" width="500"/></p>
+<p>再來看飛機案空白鍵的樣子，要想該如何讓我的專題也由同樣的功能</p>
+<p><img alt="" height="507" src="./../images/p37_18-10-36.png" width="500"/></p>
+<p>如下這是飛機案空白鍵的執行指令，想辦法拉進我的專題裡就可有同樣效果了</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
+        Frame(227,0,65,125), 4, 'vertical')
+
+    def __init__(self, position):
+        super().__init__(SpaceShip.asset, position)
+        self.thrust = 0
+        self.thrustframe = 1
+        SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
+        SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
+
+    def step(self):
+        if self.thrust == 1:
+            self.setImage(self.thrustframe)
+            self.thrustframe += 1
+            if self.thrustframe == 4:
+                self.thrustframe = 1
+        else:
+            self.setImage(0)
+
+    def thrustOn(self, event):
+        self.thrust = 1
+        
+    def thrustOff(self, event):
+        self.thrust = 0
+
+
+</pre>
+<p></p>
+<p></p><br />專案開發-1 << <a href='專案開發-1.html'>Previous</a> <a href='Python 手冊.html'>Next</a> >> Python 手冊</section></div></body></html>
