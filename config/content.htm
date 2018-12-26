@@ -1,7 +1,8 @@
 <h1>簡介</h1>
 <p>               機械設計一乙  40723210   <strong>李承澤<br/></strong>2018 Fall 計算機程式與電腦輔助設計實習課程網站<br/>                 <span style="text-decoration: line-through;"><strong><span style="color: #800000; text-decoration: line-through;">[版權所有，僅供參考勿抄襲]</span></strong></span></p>
 <p>上課須用到1.[ <a href="http://mde.tw/#/">mde.tw</a> ] 上圖          2.[ <a href="https://github.com/">github</a> ] 下圖</p>
-<p><img alt="" height="201" src="/images/未命名.png" width="395"/><img alt="" height="224" src="/images/未命名2.png" width="393"/></p><h2>CMSimfly 網站</h2>
+<p><img alt="" height="201" src="/images/未命名.png" width="395"/><img alt="" height="224" src="/images/未命名2.png" width="393"/></p>
+<h2>CMSimfly 網站</h2>
 <p>各組必須自行更改 Config 中的網站標題, 且每次完成近端動態網頁編輯後, 以 generate_pages 按鈕, 將動態網頁資料轉為靜態網頁資料, 之後再新增、提交並推送到遠端倉儲.</p>
 <h2>reveal 投影片</h2>
 <p>以 <a href="http://www.leoeditor.com/">Leo Editor</a> 開啟 config/reveal.leo</p>
@@ -177,7 +178,8 @@
 <p>(圖六)第十一周內容製作與影片</p>
 <p><img alt="" height="324" src="/images/p37_20-12-15.png" width="400"/></p>
 <p>(圖七)每周教學影片整理</p>
-<p><img alt="" height="343" src="/images/p37_20-08-06.png" width="400"/></p><h2>倉儲格式-2</h2>
+<p><img alt="" height="343" src="/images/p37_20-08-06.png" width="400"/></p>
+<h2>倉儲格式-2</h2>
 <p><strong>延續上一回的進度</strong></p>
 <p>(圖一)和同組隊員一起討論與建議的進度報告</p>
 <p><img alt="" height="301" src="/images/p37_20-37-11.png" width="400"/></p>
@@ -204,7 +206,8 @@
 <p>week13</p>
 <p><span>我們的專題就是一個小遊戲，老師有用了一個kmolgame的leo來讓我們了解，但是說實在的，我們頂多改內建的程式變換圖片或速度或者是大小而已，要我們做出一個小遊戲的話，要有說明那些指令是做甚麼的，可是說明大多都是英文，而且我們對python的語法一竅不通，是需要一點時間才能理解的，所以可能我們做出來的遊戲會遇到一堆的問題。</span></p>
 <p>week14</p>
-<p><span>目前我有把一些kmolgame的範例，改成我想做的小遊戲，可是有很多指令是範例裡面沒有的，剛好今天是交python語法，我們學到的東西是if判斷，當我們在密碼輸入bg3時會出現hellow world，有多寫一個else，就是用來判斷輸入的，在遊戲可以做出猜數字的程式，有一點用不太到呢。</span></p><h2>專案開發-1</h2>
+<p><span>目前我有把一些kmolgame的範例，改成我想做的小遊戲，可是有很多指令是範例裡面沒有的，剛好今天是交python語法，我們學到的東西是if判斷，當我們在密碼輸入bg3時會出現hellow world，有多寫一個else，就是用來判斷輸入的，在遊戲可以做出猜數字的程式，有一點用不太到呢。</span></p>
+<h2>專案開發-1</h2>
 <p>剛開始有老師給個範例<a href="https://github.com/mdecourse/kmolgame">ggame</a> 來讓我們了解</p>
 <p><img alt="" height="212" src="/images/p37_22-43-38.png" width="400"/></p>
 <p>裡面有很多的範例像是完整的game1 如下</p>
@@ -321,7 +324,135 @@ app.run()
             self.dragging = True
             # only drag one bunny at a time - consume the event
             event.consumed = True</pre>
-<p>這樣子就可以讓兔子更難的被點中了</p><h1>Python 手冊</h1>
+<p>這樣子就可以讓兔子更難的被點中了</p>
+<h2>專案開發-2</h2>
+<p>如下是一個可以按空白建起飛的程式，他預設是會一直旋轉往斜下，因為我用不到斜下，所以我會把裡面的程式改了一些</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
+
+class SpaceShip(Sprite):
+    """
+    Animated space ship
+    """
+    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
+        Frame(227,0,65,125), 4, 'vertical')
+
+    def __init__(self, position):
+        super().__init__(SpaceShip.asset, position)
+        self.vx = 1
+        self.vy = 1
+        self.vr = 0.01
+        self.thrust = 0
+        self.thrustframe = 1
+        SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
+        SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
+        self.fxcenter = self.fycenter = 0.5
+
+    def step(self):
+        self.x += self.vx
+        self.y += self.vy
+        self.rotation += self.vr
+        # manage thrust animation
+        if self.thrust == 1:
+            self.setImage(self.thrustframe)
+            self.thrustframe += 1
+            if self.thrustframe == 4:
+                self.thrustframe = 1
+        else:
+            self.setImage(0)
+
+    def thrustOn(self, event):
+        self.thrust = 1
+        
+    def thrustOff(self, event):
+        self.thrust = 0
+
+
+class SpaceGame(App):
+    """
+    Tutorial4 space game example.
+    """
+    def __init__(self):
+        super().__init__()
+        # Background
+        black = Color(0, 1)
+        noline = LineStyle(0, black)
+        bg_asset = RectangleAsset(self.width, self.height, noline, black)
+        bg = Sprite(bg_asset, (0,0))
+        SpaceShip((100,100))
+        SpaceShip((150,150))
+        SpaceShip((200,50))
+
+    def step(self):
+        for ship in self.getSpritesbyClass(SpaceShip):
+            ship.step()
+
+        
+myapp = SpaceGame()
+myapp.run()</pre>
+<p>這是改動後的樣子，飛機就不會在旋轉了</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
+
+class SpaceShip(Sprite):
+    """
+    Animated space ship
+    """
+    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
+        Frame(227,0,65,125), 4, 'vertical')
+
+    def __init__(self, position):
+        super().__init__(SpaceShip.asset, position)
+       # self.vx = 1      改
+       # self.vy = 1     改
+       # self.vr = 0.01   改
+        self.thrust = 0
+        self.thrustframe = 1
+        SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
+        SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
+        self.fxcenter = self.fycenter = 0.5
+
+    def step(self):
+       # self.x += self.vx  改
+       # self.y += self.vy   改
+       # self.rotation += self.vr 改
+        # manage thrust animation
+        if self.thrust == 1:
+            self.setImage(self.thrustframe)
+            self.thrustframe += 1
+            if self.thrustframe == 4:
+                self.thrustframe = 1
+        else:
+            self.setImage(0)
+
+    def thrustOn(self, event):
+        self.thrust = 1
+        
+    def thrustOff(self, event):
+        self.thrust = 0
+
+
+class SpaceGame(App):
+    """
+    Tutorial4 space game example.
+    """
+    def __init__(self):
+        super().__init__()
+        # Background
+        black = Color(0, 1)
+        noline = LineStyle(0, black)
+        bg_asset = RectangleAsset(self.width, self.height, noline, black)
+        bg = Sprite(bg_asset, (0,0))
+        SpaceShip((100,100))
+        SpaceShip((150,150))
+        SpaceShip((200,50))
+
+    def step(self):
+        for ship in self.getSpritesbyClass(SpaceShip):
+            ship.step()
+
+        
+myapp = SpaceGame()
+myapp.run()</pre>
+<h1>Python 手冊</h1>
 <p>計算機程式教材:  <a href="http://mde.tw/cp2018/content/">http://mde.tw/cp2018/content/</a> </p>
 <p>可攜程式下載: <a href="https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing">p37.7z</a></p>
 <h2>練習-1</h2>
