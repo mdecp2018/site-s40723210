@@ -1,0 +1,1296 @@
+<h1>簡介</h1>
+<p>               機械設計一乙  40723210   <strong>李承澤<br/></strong>2018 Fall 計算機程式與電腦輔助設計實習課程網站<br/>                 <span style="text-decoration: line-through;"><strong><span style="color: #800000; text-decoration: line-through;">[版權所有，僅供參考勿抄襲]</span></strong></span></p>
+<p>上課須用到1.[ <a href="http://mde.tw/#/">mde.tw</a> ] 上圖          2.[ <a href="https://github.com/">github</a> ] 下圖</p>
+<p><img alt="" height="201" src="/images/未命名.png" width="395"/><img alt="" height="224" src="/images/未命名2.png" width="393"/></p>
+<h2>CMSimfly 網站</h2>
+<p>各組必須自行更改 Config 中的網站標題, 且每次完成近端動態網頁編輯後, 以 generate_pages 按鈕, 將動態網頁資料轉為靜態網頁資料, 之後再新增、提交並推送到遠端倉儲.</p>
+<h2>reveal 投影片</h2>
+<p>以 <a href="http://www.leoeditor.com/">Leo Editor</a> 開啟 config/reveal.leo</p>
+<h2>pelican 網誌</h2>
+<p>以 <a href="http://www.leoeditor.com/">Leo Editor</a> 開啟 config/pelican.leo </p>
+<p>各分組必須自行更改 @edit pelicanconf.py 中的 AUTHOR 與 SITENAME</p>
+<p>更改 @edit publishconf.py 中的 SITEURL</p>
+<p></p>
+<h1>課程介紹</h1>
+<p>        首先我們要在第一周到第九周把老師出的獨立作業給做完，一開始先到<a href="https://github.com/">github</a>用學校email申請帳號，以 s為首加上學號作為帳號例如s40723210，之後進入課程網站<a href="http://mde.tw/#/">mde.tw</a>領取作業，所有上課內容都以數位形式存在，包括網站與教學影片都在<a href="https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos">youtube</a>內，剛開始我們會不懂git的指令，所以要自己上網學習，我有整理了一些git的指令，每一周都要上傳一部影片，上傳自己的練習操作影片或是上傳自己教學影片，老師會在每一周都教學一些不同的東西，像是第二周就是把git倉儲的網站創造出來，還有如何更新內容，而第三周是教學如何以ShareX截圖與拍影片，老師的影片教學都是以上課內容為主，是以ShareX來一邊教我們一邊拍影片上傳的，所以如果當天上課有不懂的話可以到影片中，仔細聆聽與觀看來明白上課內容。</p>
+<p>再來是要開始練習Python()的指令了，要一步一步的來學習</p>
+<h2>git基本指令</h2>
+<ol></ol>
+<p>mkdir name 創建一個文檔夾</p>
+<p>rm file 刪除</p>
+<p>cd name 進入文檔夾</p>
+<p>pwd 查看當前目錄</p>
+<p>git init<span> </span><span>把當前目錄變成</span>git<span>可以管理的倉庫 生成</span><span>.git</span><span>文檔夾</span></p>
+<p>git add name<span> </span><span>把文檔添加到暫存區</span>stage</p>
+<p>git commit -m “ ”<span> </span><span>把暫存區所有文檔提交到</span>git<span>當前分支上（本地倉庫）</span></p>
+<p>git status<span> </span><span>查看當前</span>git<span>倉庫狀態</span></p>
+<p>git diff file<span> </span><span>查看修改的文檔內容</span></p>
+<p>git log<span> </span><span>查看從最近到最遠的提交日誌</span></p>
+<p>git reset --hard<span> </span><span>版本號  回退到某版本（</span><span>HEAD</span><span>指向當前版本）</span></p>
+<pre class="highlight"><span>git push origin HEAD --force 上傳目前(hard)版本</span></pre>
+<p>git reflog  <span>查看命令操作歷史</span></p>
+<p>git checkout -- file    <span>丟棄工作區文檔的修改</span></p>
+<p>git reset HEAD file    <span>丟棄暫存區的文檔</span></p>
+<p>git rm file  <span>刪除工作區文檔後還需刪除</span>git<span>中的文檔</span></p>
+<p>git checkout --file  <span>恢復誤刪的</span>git<span>文檔</span></p>
+<p>關聯一個遠程倉庫   git remote add origin address</p>
+<p>第一次推送代碼到遠程倉庫 git push -u origin master</p>
+<p><span>（</span>-u<span>會把本地倉庫</span><span>master</span><span>分支和遠程倉庫的</span>master<span>分支</span><span>關聯起來）</span></p>
+<p>從遠程倉庫克隆代碼到本地 git clone address</p>
+<p>創建分支 git branch name</p>
+<p>切換分支 git checkout name     </p>
+<p>查看分支 git branch</p>
+<p>創建分支並切換到分支上　　git checkout -b name</p>
+<p>合併指定分支到當前分支上 git merge name</p>
+<p>合併後刪除分支 git branch -d name</p>
+<p><strong>合併時出現衝突要手動解決衝突，再提交，最後合併</strong>。</p>
+<p>將寫到一半的代碼從工作區拿走存起來 git stash</p>
+<p><span>恢復隱藏的代碼到工作區並刪除隱藏位置的代碼</span><span> </span> git stash pop</p>
+<p>強行刪除一個沒有合併過的分支 git branch -D name</p>
+<p></p>
+<h2>python基本語法</h2>
+<p>● ”#”符號後是註解（comment），可以在一列的開頭或中間加入<br/>● reserved word or built-in function (變數取名請避開！)<br/>○     and, exec, not, as, finally, or, assert, for, pass, except<br/>○     break, from, print, class, global, raise, continue, if, return<br/>○     def, import, try, del, in, while, elif, is, with, else, lambda, yield<br/>● 縮排視為不同的block (在IF判斷式或迴圈的段落中使用)<br/>○     縮排可以用tab或是數個空格(至少一個空格)。<br/>○     空格的數量不同，視為不同的block (bug很容易因為這一點而發生)<br/>● python的每個變數視為一個object。</p>
+<p><span style="color: #000080;"><strong>Python variables</strong></span></p>
+<p>● 不需要事先宣告變數，直接用”=“ assign value（賦值）即可。<br/>○     x=3.14 → 實數變數<br/>● 變數類型（data type）根據被賦予的值決定（之後如果被assign不同類型的數<br/>值，該變數的類型就會直接改變）<br/>○     x=‘text’ → 字串變數<br/>● 確認變數的data type: type(x)<br/>● 變數名稱中的大小寫要完全一致（a、A會當作不同的變數）<br/>● python可以在同一個指令中對多個變數賦值<br/>○     x, y = 2, 1 → x = 2, y = 1<br/>● 若想要移除變數，使用del x y<br/>● 常見的data type: number, string, list, tuple, boolean</p>
+<p><span style="color: #000080;"><strong>Simple input/output</strong></span></p>
+<p>● input(“…”) 在螢幕上顯示字串，並等待使用者輸入字串<br/>○     x = input (“input your name: “)  螢幕上會顯示訊息 input your name:，<br/>       使用者輸入的內容，會用字串類型存到x變數<br/>○    就算使用者輸入數字，仍然是以字串類型儲存（之後會介紹如何切割字串<br/>     （split），轉為數值）<br/>● print (...) 顯示在螢幕上<br/>○     e.g. print (“Hello World!!”)<br/>○     若要一次輸出多個變數至螢幕上，直接以逗號分開 e.g. print(x,y,z)<br/>○     也可以format output</p>
+<p><span style="color: #000080;"><strong>Python variable types</strong></span></p>
+<p>● Number 數值<br/>○     int : a = 11<br/>○     float: a = 1.1e-18<br/>○     complex: a = 4. + 7j<br/>● String 字串 （ 用“ “ 或 ‘ ‘夾起）<br/>○     e.g. x = “Hello World!” or x = ‘Hello World!’<br/>○     取出字串的局部：x [0:3]<br/>■         注意：index 從 0 開始計算！<br/>■         [a:b] -- begin at index a and end before index b (e.g., x[0:3] -&gt; “Hel”)<br/>○     不可以對字串的局部做更改，e.g. x[0:3] =”Yo!” (這個是錯誤的語法)<br/>● Boolean 邏輯<br/>○     只有True, False兩種值，根據邏輯判斷（IF condition）的結果決定<br/>○     兩個boolean 變數做運算，會以True=1, False=0 做整數運算</p>
+<p><span style="color: #000080;"><strong>Python variables: list and tuple</strong></span></p>
+<p>● list, tuple<br/>○     類似陣列的概念，但可以混雜儲存不同型態的資料，如下所示<br/>○     List： x = [ 'abcd', 786 , 2.23, 'john', 70.2]<br/>○     Tuple: y = ( 'abcd', 786 , 2.23, 'john', 70.2)<br/>○     assignment: list 使用 [], tuple 使用(), 每個元素都用”，”分開<br/>○     list 的大小及元素可以改變。tuple則不行 (類似常數陣列)<br/>○     sub-list 或是 sub-tuple語法類似取出字串局部：<br/>            x[0:2]  ['abcd', 786 ]<br/>            y[2:4]  (786, 2.23 )</p>
+<p><span style="color: #000080;"><strong>Convert data type</strong></span></p>
+<p>有時候需要不同型態的資料轉換，例如將字串”10”轉成整數10<br/>下列為常用的built-in function<br/>● int (x)<br/>● float (x)<br/>● str (x)</p>
+<p><span style="color: #000080;"><strong>Arithmetic Operators</strong></span></p>
+<p>● 加法 +<br/>○     string 相加：形成新的字串                              ● 次方 **<br/>■         x = “Hello”, y = “World”                                ● 取餘數 %<br/>■         c = x + y → c = “HelloWorld”                        ● 整除至最近整數 //<br/>● 減法 -                                                                      ○相除後取最接近的整數(整實數)，<br/>● 乘法 *                                                                      結果的類型取決於兩個變數的類型：<br/>○     string 乘一個數字(int)：字串重複幾次                       9//2 = 4<br/>■         x = “Yo!”                                                                    9.0//2.0 = 4.0<br/>■         y = x * 3 → y = “Yo!Yo!Yo!”                                    11.0//3 = 4.0<br/>● 除法 /<br/>○     注意：兩個整數相除，結果是實數<br/>■         x = 21, y = 10<br/>■         c = x / y → c = 2.1</p>
+<p><strong><span style="color: #000080;">Arithmetic Operators</span></strong></p>
+<p>● 如果要進行下面的運算 a= a+b （用a+b的結果為a重新賦值）<br/>● 在python可以改寫成： a += b<br/>● 所以算術運算符號可以有<br/>        +=     -=     *=     /=     %=     **=     //=</p>
+<p><span style="color: #000080;"><strong>Modules or package （也稱為library）</strong></span></p>
+<p>● ”modules” or “packages”：通常是其他人寫好的函數或指令，打包成一個「工具庫」<br/> 方便分享使用。（非python內建，可能會需要下載安裝）<br/>○     本課程會用到的library: numpy (array), matplotlib (基本繪圖), basemap (地圖),<br/>         netCDF (讀nc檔)<br/>● 使用方式：import module_name<br/>○     在執行工具庫內的指令之前，就要先把modules 引進來（不然python不會認得<br/>        非內建的指令）<br/>○     使用工具庫內的指令：module_name.function (or module_name.constant)<br/>○     可以使用import module_name as xxx (xxx是你自己取的縮寫）<br/>        使用指令的語法就簡化成xxx.function，例如:<br/>             import math as m<br/>             x=m.cos(m.pi)</p>
+<h1>組員操作影片</h1>
+<p>每週各分組組員必須將參與分組協同過程之電腦操作流程錄成影片後, 上傳至各自的 Youtube 帳號區, 並嵌入各分組網站頁面中.</p>
+<p></p>
+<h2>Week1</h2>
+<p><span>1.建立github帳號</span></p>
+<p><span>2.建立倉儲: s40723210.github.io</span></p>
+<p><span>2.git clone  https://github.com/mdecourse/2018fall</span></p>
+<p><span>3.git clone  https://github.com/s40723210/s40723210.github.io</span></p>
+<p><span>4.從2018fall資料夾複製裡面的檔案，排除.git和README.me，並貼到自己的資料夾內</span></p>
+<p><span>5.git status(檢查狀態)&gt;git add .(增加)&gt;git commit -m "名稱"( 提交)&gt;git push (推送)</span></p>
+<p><span></span></p>
+<p style="text-align: center;"><strong>↓ 老師的範例影片 ↓</strong></p>
+<p><span>國立虎尾科技大學機械設計工程系計算機程式 - 一乙第八週第三部分, 說明如何利用 Eric6 IDE 建立所需的 calculator 計算機程式對話表單. 過程中主要學習如何啟動 Eric6, 如何建立 Eric6 專案, 如何切換 Sources tab 與 Form tab, 如何在進入 Qt Designer 後利用格點布局, 建立按鈕與 Line Edit 部件.</span></p>
+<p><iframe allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/g4ksXq7sQ4M" width="560"></iframe><strong></strong></p>
+<h2>Week2</h2>
+<p><span>1.先登入github帳號</span></p>
+<p><span>2.到<a href="https://classroom.github.com/a/wlLbt5TQ">https://classroom.github.com/a/wlLbt5TQ</a>領取個人倉儲作業</span></p>
+<p><span>3.在site-s40723210的 settings &gt; Branches &gt; 把branches改為gh-pages</span></p>
+<p><span>4.如下圖，之後就可以開始更新網址了</span></p>
+<p><img alt="" height="358" src="/images/d8cd77c4-15db-40c8-bfa7-99225ddaca09.png" width="547"/></p>
+<h2>Week3</h2>
+<p style="text-align: center;"><strong>更改網頁標題(2018 Fall分組網站 --&gt;Githud個人網站)</strong></p>
+<p style="text-align: left;">1.開啟近端的[動態]與[靜態]</p>
+<p style="text-align: left;">2.login &gt; 密碼:admin(每個人都一樣)</p>
+<p style="text-align: left;">3.點選Config ，更改標題</p>
+<p style="text-align: left;">4.git status  &gt; git add .  &gt; git commit -m "add" &gt;git push</p>
+<p style="text-align: left;">5以下是我拍的影片教學 </p>
+<p style="text-align: left;"><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="//www.youtube.com/embed/M2ANRwM4Shc?feature=youtu" width="560"></iframe></p>
+<h2>Week4</h2>
+<p style="text-align: center;"><strong>更改reveal投影片(個人倉儲&gt;s40723210)</strong></p>
+<p>1.先開啟檔案(p37)</p>
+<p>2.<span>以 </span>Leo Editor<span> 開啟 config/reveal.leo</span></p>
+<p><span>3.開啟靜態http-server. py</span></p>
+<p><span>4.修改reveal投影片的封面標題</span></p>
+<p><span>5.Save &gt; git push</span></p>
+<p><span>6.以下是我的教學影片</span></p>
+<p style="text-align: left;"><strong><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/yGOvh4XaGyE" width="560"></iframe></strong></p>
+<h2>Week5</h2>
+<p>1.到<a href="http://mde.tw/#/">mde.tw</a>  &gt; 18CP &gt; 簡介 &gt; Python &gt; Python 教材</p>
+<p>2.閱讀並往下滾動，到(開始練習 print() 用法, 並著手建立函式)</p>
+<p>3.開始練習，並且把[Ex1]  [Ex2]  [Ex3]  [Ex4]給學會</p>
+<p>4.我在Python 手冊 中有練習，可以到那裡參考</p>
+<p>5.以下是我的[<strong>如何上傳影片教學] </strong></p>
+<p><strong><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/K5kBIbWj4vw" width="560"></iframe></strong></p>
+<h2>Week6</h2>
+<p style="text-align: center;"><strong>升級最新的 CMSimfly 倉儲中的 flaskapp.py<br/></strong></p>
+<p style="text-align: left;">1.先到mde.tw &gt; 18CP &gt; 工具 &gt; CMSimfly</p>
+<p style="text-align: left;">2.進入<a href="https://github.com/chiamingyen/cmsimfly">https://github.com/chiamingyen/cmsimfly</a></p>
+<p style="text-align: left;">3.點flaskapp.py &gt; Raw &gt; Ctrl+a(全選) &gt; 複製</p>
+<p style="text-align: left;">4.到自己的site-s40723210，打開flaskapp.py把裡面刪掉</p>
+<p style="text-align: left;">5.貼上，Save &gt; git push</p>
+<p style="text-align: left;">6.以下是我拍的操作影片</p>
+<p style="text-align: left;"><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/qjAxihPhesk" width="560"></iframe></p>
+<h2>Week7</h2>
+<p>1.因為githud無法登入</p>
+<p>2.所以<yt-formatted-string class="style-scope ytd-video-primary-info-renderer">利用 Fossil SCM 建立區域網路</yt-formatted-string></p>
+<p>3.開始教學如何使用<yt-formatted-string class="style-scope ytd-video-primary-info-renderer">Fossil SCM，來更新網頁</yt-formatted-string></p>
+<p>4.如果githud之後都不能使用就只能用<yt-formatted-string class="style-scope ytd-video-primary-info-renderer">Fossil SCM</yt-formatted-string></p>
+<p>5.以下是我的更改網誌blog網址<yt-formatted-string class="style-scope ytd-video-primary-info-renderer"><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/-neP1Eeh4-4" width="560"></iframe><br/></yt-formatted-string></p>
+<p></p>
+<h2>Week8</h2>
+<p style="text-align: center;"><strong>如何利用git remote add 指令</strong></p>
+<p>1.先到<a href="https://about.gitlab.com/">gitlab</a>可以用自己的github帳號登入</p>
+<p>2.之後在gitlab創建一個倉儲</p>
+<p>3.然後到個人資料設定密碼，跟github密碼一樣</p>
+<p>4.git remote add cp2018 <a href="https://gitlab.com/s40723210/cp2018-s40723210">https://gitlab.com/s40723210/cp2018-s40723210</a></p>
+<p>5.git push cp2018 完成後就同步了</p>
+<p>6.以下是我創gitlab和同步教學</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ZAuf4NZxvV0" width="560"></iframe></p>
+<p></p>
+<h2>更多操作影片-1</h2>
+<p style="text-align: center;"><strong>reveal中新增投影片</strong></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/SHLMwGrO8qo" width="560"></iframe></p>
+<h2>更多操作影片-2</h2>
+<p style="text-align: center;"><strong>更改blog大標題</strong></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/VFHe91fXspM" width="560"></iframe></p>
+<h2>更多操作影片-3</h2>
+<p style="text-align: center;"><strong>更新版本退回</strong></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/W-XmTIETsh0" width="560"></iframe></p>
+<h1>分組專案(個人)</h1>
+<p><strong>這是在分組協同中自己所貢獻的進度</strong></p>
+<h2>倉儲規劃</h2>
+<p><strong>這是我再用倉儲時的操作與貢獻和heroku網址的創建與規劃</strong></p>
+<p>(圖一) 因為我是組長所以要領倉儲，進行邀請組員加入</p>
+<p><img alt="" height="330" src="/images/p37_19-49-00.png" width="300"/></p>
+<p>(圖二)進行Readme的更改與更新</p>
+<p><img alt="" height="352" src="/images/p37_19-44-40.png" width="300"/></p>
+<p>(圖三)創立app 來進行同步</p>
+<p><img alt="" height="248" src="/images/p37_19-46-49.png" width="300"/></p>
+<p>(圖四)給予組員有權限來git clone</p>
+<p><img alt="" height="288" src="/images/p37_19-47-35.png" width="310"/></p>
+<p>(圖五)讓組員git clone的網址</p>
+<p><img alt="" height="276" src="/images/p37_19-47-54.png" width="305"/></p>
+<p>(圖六)讓heroku和github同步</p>
+<p><img alt="" height="219" src="/images/p37_19-47-09.png" width="300"/></p>
+<p></p>
+<h2>倉儲格式-1</h2>
+<p><strong>這是我在排版分組網站時的更改和新增</strong></p>
+<p>(圖一)排版更新</p>
+<p><img alt="" height="407" src="/images/p37_19-40-42.png" width="396"/></p>
+<p>(圖二)每周點名更改</p>
+<p><img alt="" height="428" src="/images/p37_20-09-37.png" width="402"/></p>
+<p>(圖三)增加課程的而外補充內容</p>
+<p><img alt="" height="375" src="/images/p37_20-09-46.png" width="407"/></p>
+<p>(圖四)而外補充簡單語法</p>
+<p><img alt="" height="342" src="/images/p37_20-09-55.png" width="400"/></p>
+<p></p>
+<p>(圖五)第十二周的內容製作與影片</p>
+<p><img alt="" height="326" src="/images/p37_20-10-20.png" width="400"/></p>
+<p>(圖六)第十一周內容製作與影片</p>
+<p><img alt="" height="324" src="/images/p37_20-12-15.png" width="400"/></p>
+<p>(圖七)每周教學影片整理</p>
+<p><img alt="" height="343" src="/images/p37_20-08-06.png" width="400"/></p>
+<h2>倉儲格式-2</h2>
+<p><strong>延續上一回的進度</strong></p>
+<p>(圖一)和同組隊員一起討論與建議的進度報告</p>
+<p><img alt="" height="301" src="/images/p37_20-37-11.png" width="400"/></p>
+<p>(圖二)在課程中撰寫的if判斷是指令是更著老師和學長，好不容易才寫出來的</p>
+<p><img alt="" height="312" src="/images/p37_20-14-40.png" width="400"/></p>
+<p>(圖三)獨立研究的格式規劃與建立</p>
+<p><img alt="" height="439" src="/images/p37_20-08-51.png" width="400"/></p>
+<p>(圖四)思考和判斷的進度撰寫</p>
+<p><img alt="" height="300" src="/images/p37_20-56-02.png" width="400"/></p>
+<p>(圖五)設置各周的連結操作頁</p>
+<p><img alt="" height="437" src="/images/p37_20-09-01.png" width="400"/></p>
+<p>(圖六)設置各周的進度頁</p>
+<p><img alt="" height="402" src="/images/p37_20-09-11.png" width="400"/></p>
+<p>(圖七)設置每周的心得頁面</p>
+<p><img alt="" height="452" src="/images/p37_20-09-26.png" width="400"/></p>
+<p></p>
+<h2>每周心得</h2>
+<p>week10</p>
+<p><span>這禮拜是學長來跟我們說明如何利用新版 P37-18.11 中的 eric6 軟體，可以利用內部的一些特殊模組，來做出一些連動的東西，而這次學長教的是利用slider、porgress bar</span><yt-formatted-string class="style-scope ytd-video-primary-info-renderer">、button來做一個小小的應用程式，我覺得很有趣可以自己創作想要的東西，像是登入器就可以利用eric6來做出來，可以認真的來學習這個軟體。</yt-formatted-string></p>
+<p>week11</p>
+<p><span>今天老師教的是把我們的隨身系統更新一個heroku指令，在為什麼加入這個軟件呢，因為我們之後每一組，都會用到heroku的網站，要上傳到heroku的網站指令是不同的，所以需要下載新的heroku的插件，雖然跟git指令有一點類似，只是heroku網站可以在線上改，下禮拜才會開始用heroku網站，所以我很期待這個功能。</span></p>
+<p><span>week12</span></p>
+<p><span>而現在要開始辦heroku網頁帳號，由組長來創一個app，來讓我們可以跟github同步，我原本以為可以直接在heroku網頁做改動，可是必須要有一個主機才可以實現這個功能，所以不能直接改還是要在github用上船的，讓我有一點小失望，我覺得heroku網站的用意應該是，讓我們有兩個倉儲可以防止，其中一個資料消失時還有備用的。</span></p>
+<p>week13</p>
+<p><span>我們的專題就是一個小遊戲，老師有用了一個kmolgame的leo來讓我們了解，但是說實在的，我們頂多改內建的程式變換圖片或速度或者是大小而已，要我們做出一個小遊戲的話，要有說明那些指令是做甚麼的，可是說明大多都是英文，而且我們對python的語法一竅不通，是需要一點時間才能理解的，所以可能我們做出來的遊戲會遇到一堆的問題。</span></p>
+<p>week14</p>
+<p><span>目前我有把一些kmolgame的範例，改成我想做的小遊戲，可是有很多指令是範例裡面沒有的，剛好今天是交python語法，我們學到的東西是if判斷，當我們在密碼輸入bg3時會出現hellow world，有多寫一個else，就是用來判斷輸入的，在遊戲可以做出猜數字的程式，有一點用不太到呢。</span></p>
+<h2>專案開發-1</h2>
+<p>剛開始有老師給個範例<a href="https://github.com/mdecourse/kmolgame">ggame</a> 來讓我們了解</p>
+<p><img alt="" height="212" src="/images/p37_22-43-38.png" width="400"/></p>
+<p>裡面有很多的範例像是完整的game1 如下</p>
+<p>兔子跳+滑鼠拖移</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import App, ImageAsset, Sprite, MouseEvent
+from random import random, randint
+
+class Bunny(Sprite):
+    
+    asset = ImageAsset("images/bunny.png")
+    
+    def __init__(self, position):
+        super().__init__(Bunny.asset, position)
+        # register mouse events
+        App.listenMouseEvent(MouseEvent.mousedown, self.mousedown)
+        App.listenMouseEvent(MouseEvent.mouseup, self.mouseup)
+        App.listenMouseEvent(MouseEvent.mousemove, self.mousemove)
+        self.dragging = False
+
+    
+    def step(self):
+        """
+        Every now and then a bunny hops...
+        """
+        if random() &lt; 0.01:
+            self.x += randint(-20,20)
+            self.y += randint(-20,20)
+        
+        
+    def mousedown(self, event):
+        # capture any mouse down within 50 pixels
+        self.deltax = event.x - (self.x + self.width//2) 
+        self.deltay = event.y - (self.y + self.height//2)
+        if abs(self.deltax) &lt; 50 and abs(self.deltay) &lt; 50:
+            self.dragging = True
+            # only drag one bunny at a time - consume the event
+            event.consumed = True
+            
+    def mousemove(self, event):
+        if self.dragging:
+            self.x = event.x - self.deltax - self.width//2
+            self.y = event.y - self.deltay - self.height//2
+            event.consumed = True
+            
+    def mouseup(self, event):
+        if self.dragging:
+            self.dragging = False
+            event.consumed = True
+            
+        
+class DemoApp(App):
+    
+    def __init__(self):
+        super().__init__()
+        for i in range(10):
+            Bunny((randint(50,self.width),randint(50,self.height)))
+        
+    def step(self):
+        """
+        Override step to perform action on each frame update
+        """
+        for bunny in self.spritelist:
+            bunny.step()
+
+
+# Create the app
+app = DemoApp()  
+# Run the app
+app.run()
+</pre>
+<p><img alt="" height="385" src="/images/p37_22-42-17.png" width="500"/><br/><br/></p>
+<p>我進行了一些的改動</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">    def step(self):
+        """
+        Every now and then a bunny hops...
+        """
+        if random() &lt; 0.01:
+            self.x += randint(-20,20)
+            self.y += randint(-20,20)</pre>
+<p>改成了如下<br/><br/></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">    def step(self):
+        """
+        Every now and then a bunny hops...
+        """
+        if random() &lt; 0.01:
+            self.x += randint(-40,40)
+            self.y += randint(-40,40)</pre>
+<p>兔子的跳動範圍就變大了</p>
+<p>改成如下</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">    def step(self):
+        """
+        Every now and then a bunny hops...
+        """
+        if random() &lt; 0.04:
+            self.x += randint(-20,20)
+            self.y += randint(-20,20)</pre>
+<p>兔子的跳動頻率就變快了</p>
+<p>所以我思考了可以做一個捕捉的遊戲，進行更改兔子的動作而加深難度，我也想到了可以把兔子移動到某一個東西上面，就可以更改了一些狀況。</p>
+<p>我讓滑鼠點兔子時只能點兔子的中心小範圍的話要改，如下是滑鼠的點擊像素範圍</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">    def mousedown(self, event):
+        # capture any mouse down within 50 pixels
+        self.deltax = event.x - (self.x + self.width//2) 
+        self.deltay = event.y - (self.y + self.height//2)
+        if abs(self.deltax) &lt; 40 and abs(self.deltay) &lt; 40:
+            self.dragging = True
+            # only drag one bunny at a time - consume the event
+            event.consumed = True</pre>
+<p>改成如下</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">    def mousedown(self, event):
+        # capture any mouse down within 50 pixels
+        self.deltax = event.x - (self.x + self.width//2) 
+        self.deltay = event.y - (self.y + self.height//2)
+        if abs(self.deltax) &lt; 20 and abs(self.deltay) &lt; 20:
+            self.dragging = True
+            # only drag one bunny at a time - consume the event
+            event.consumed = True</pre>
+<p>這樣子就可以讓兔子更難的被點中了</p>
+<h2>專案開發-2</h2>
+<p>下面這個是一個會跑的球的程式碼，案空白鍵可以暫停，也可以上下移動，案r可以往返像跑，滑鼠點會順移到滑鼠位子</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import (
+    App, 
+    Color, 
+    Sound,
+    LineStyle, 
+    Sprite, 
+    RectangleAsset, 
+    ImageAsset,
+    CircleAsset, 
+    EllipseAsset, 
+    PolygonAsset,
+    SoundAsset,
+)
+
+myapp = App()
+
+# define colors and line style
+green = Color(0x00ff00, 1)
+black = Color(0, 1)
+noline = LineStyle(0, black)
+# a rectangle asset and sprite to use as background
+bg_asset = RectangleAsset(myapp.width, myapp.height, noline, green)
+bg = Sprite(bg_asset, (0,0))
+# A ball! This is already in the ggame-tutorials repository
+ball_asset = ImageAsset("images/orb-150545_640.png")
+ball = Sprite(ball_asset, (0, 0))
+# Original image is too big. Scale it to 1/10 its original size
+ball.scale = 0.1
+# custom attributes
+ball.direction = 10
+ball.go = True
+# Sounds
+pew1_asset = SoundAsset("sounds/pew1.mp3")
+pew1 = Sound(pew1_asset)
+pop_asset = SoundAsset("sounds/reappear.mp3")
+pop = Sound(pop_asset)
+
+# reverse - change the ball direction
+def reverse(b):
+    #pop.play()
+    b.direction *= -1
+
+def ball_y_down():
+    ball.y += 3
+    
+def ball_y_up():
+    ball.y -= 3
+
+# Set up function for handling screen refresh
+def step():
+    if ball.go:
+        ball.x += ball.direction
+        if ball.x + ball.width &gt; myapp.width or ball.x &lt; 0:
+            ball.x -= ball.direction
+            reverse(ball)
+
+# Handle the space key
+def spaceKey(event):
+    ball.go = not ball.go
+
+# Handle the "reverse" key
+def reverseKey(event):
+    reverse(ball)
+    
+def ballDown(event):
+    ball_y_down()
+    
+def ballUp(event):
+    ball_y_up()
+
+# Handle the mouse click
+def mouseClick(event):
+    pew1.play()
+    ball.x = event.x
+    ball.y = event.y
+    
+# Set up event handlers for the app
+myapp.listenKeyEvent('keydown', 'space', spaceKey)
+myapp.listenKeyEvent('keydown', 'r', reverseKey)
+myapp.listenMouseEvent('click', mouseClick)
+
+myapp.listenKeyEvent('keydown', 'down arrow', ballDown)
+myapp.listenKeyEvent('keydown', 'up arrow', ballUp)
+    
+myapp.run(step)</pre>
+<p><img alt="" height="288" src="/images/p37_22-41-54.png" width="500"/></p>
+<p>而我需要上下移動的功能的話，我先把其他用不到的刪掉如下</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import (
+    App, 
+    Color, 
+    Sound,
+    LineStyle, 
+    Sprite, 
+    RectangleAsset, 
+    ImageAsset,
+    CircleAsset, 
+    EllipseAsset, 
+    PolygonAsset,
+    SoundAsset,
+)
+
+myapp = App()
+
+bg = Sprite(bg_asset, (0,0))
+ball_asset = ImageAsset("images/orb-150545_640.png")
+ball = Sprite(ball_asset, (0, 0))
+ball.scale = 0.1
+# custom attributes
+ball.direction = 10
+
+def ball_y_down():
+    ball.y += 3
+    
+def ball_y_up():
+    ball.y -= 3
+
+# Set up function for handling screen refresh
+def step():
+  pass
+
+def ballDown(event):
+    ball_y_down()
+    
+def ballUp(event):
+    ball_y_up()
+
+myapp.listenKeyEvent('keydown', 'down arrow', ballDown)
+myapp.listenKeyEvent('keydown', 'up arrow', ballUp)
+    
+myapp.run(step)</pre>
+<p>我還需要左右的性能，所以模仿(上下)的指令做出如下</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import (
+    App, 
+    Color, 
+    Sound,
+    LineStyle, 
+    Sprite, 
+    RectangleAsset, 
+    ImageAsset,
+    CircleAsset, 
+    EllipseAsset, 
+    PolygonAsset,
+    SoundAsset,
+)
+
+myapp = App()
+
+bg = Sprite(bg_asset, (0,0))
+ball_asset = ImageAsset("images/orb-150545_640.png")
+ball = Sprite(ball_asset, (0, 0))
+ball.scale = 0.1
+# custom attributes
+ball.direction = 10
+
+def ball_y_down():
+    ball.y += 3
+    
+def ball_y_up():
+    ball.y -= 3
+
+def ball_x_right():
+    ball.x += 20
+
+def ball_x_left():
+    ball.x -= 20
+
+# Set up function for handling screen refresh
+def step():
+  pass
+
+def ballDown(event):
+    ball_y_down()
+    
+def ballUp(event):
+    ball_y_up()
+
+def ballleft(event):
+    ball_x_left()
+
+def ballright(event):
+    ball_x_right()
+
+myapp.listenKeyEvent('keydown', 'down arrow', ballDown)
+myapp.listenKeyEvent('keydown', 'up arrow', ballUp)
+myapp.listenKeyEvent('keydown', 'right arrow', self.ballright)
+myapp.listenKeyEvent('keydown', 'left arrow', self.ballleft)
+    
+myapp.run(step)</pre>
+<p>就可以把這個指令放進我的遊戲裡面了，可以有很多的語法要改</p>
+<h2>專案開發-3</h2>
+<p>如下是一個可以按空白建起飛的程式，他預設是會一直旋轉往斜下，因為我用不到斜下，所以我會試著改裡面的程式</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
+
+class SpaceShip(Sprite):
+    """
+    Animated space ship
+    """
+    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
+        Frame(227,0,65,125), 4, 'vertical')
+
+    def __init__(self, position):
+        super().__init__(SpaceShip.asset, position)
+        self.vx = 1
+        self.vy = 1
+        self.vr = 0.01
+        self.thrust = 0
+        self.thrustframe = 1
+        SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
+        SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
+        self.fxcenter = self.fycenter = 0.5
+
+    def step(self):
+        self.x += self.vx
+        self.y += self.vy
+        self.rotation += self.vr
+        # manage thrust animation
+        if self.thrust == 1:
+            self.setImage(self.thrustframe)
+            self.thrustframe += 1
+            if self.thrustframe == 4:
+                self.thrustframe = 1
+        else:
+            self.setImage(0)
+
+    def thrustOn(self, event):
+        self.thrust = 1
+        
+    def thrustOff(self, event):
+        self.thrust = 0
+
+
+class SpaceGame(App):
+    """
+    Tutorial4 space game example.
+    """
+    def __init__(self):
+        super().__init__()
+        # Background
+        black = Color(0, 1)
+        noline = LineStyle(0, black)
+        bg_asset = RectangleAsset(self.width, self.height, noline, black)
+        bg = Sprite(bg_asset, (0,0))
+        SpaceShip((100,100))
+        SpaceShip((150,150))
+        SpaceShip((200,50))
+
+    def step(self):
+        for ship in self.getSpritesbyClass(SpaceShip):
+            ship.step()
+
+        
+myapp = SpaceGame()
+myapp.run()</pre>
+<p><img alt="" height="396" src="/images/p37_11-54-02.png" width="500"/></p>
+<p>飛機案空白鍵的樣子如下，我也想在專題中加入這種性能</p>
+<p><img alt="" height="488" src="/images/p37_11-54-28.png" width="500"/></p>
+<p>如下這是改動後的樣子，是把飛機旋轉和移動的性能關掉</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
+
+class SpaceShip(Sprite):
+    """
+    Animated space ship
+    """
+    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
+        Frame(227,0,65,125), 4, 'vertical')
+
+    def __init__(self, position):
+        super().__init__(SpaceShip.asset, position)
+       # self.vx = 1      改
+       # self.vy = 1     改
+       # self.vr = 0.01   改
+        self.thrust = 0
+        self.thrustframe = 1
+        SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
+        SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
+        self.fxcenter = self.fycenter = 0.5
+
+    def step(self):
+       # self.x += self.vx  改
+       # self.y += self.vy   改
+       # self.rotation += self.vr 改
+        # manage thrust animation
+        if self.thrust == 1:
+            self.setImage(self.thrustframe)
+            self.thrustframe += 1
+            if self.thrustframe == 4:
+                self.thrustframe = 1
+        else:
+            self.setImage(0)
+
+    def thrustOn(self, event):
+        self.thrust = 1
+        
+    def thrustOff(self, event):
+        self.thrust = 0
+
+
+class SpaceGame(App):
+    """
+    Tutorial4 space game example.
+    """
+    def __init__(self):
+        super().__init__()
+        # Background
+        black = Color(0, 1)
+        noline = LineStyle(0, black)
+        bg_asset = RectangleAsset(self.width, self.height, noline, black)
+        bg = Sprite(bg_asset, (0,0))
+        SpaceShip((100,100))
+        SpaceShip((150,150))
+        SpaceShip((200,50))
+
+    def step(self):
+        for ship in self.getSpritesbyClass(SpaceShip):
+            ship.step()
+
+        
+myapp = SpaceGame()
+myapp.run()</pre>
+<p><img alt="" height="446" src="/images/p37_11-52-50.png" width="500"/></p>
+<p>再來看飛機案空白鍵的樣子，要想該如何讓我的專題也由同樣的功能</p>
+<p><img alt="" height="507" src="/images/p37_18-10-36.png" width="500"/></p>
+<p>如下這是飛機案空白鍵的執行指令，想辦法拉進我的專題裡就可有同樣效果了</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
+        Frame(227,0,65,125), 4, 'vertical')
+
+    def __init__(self, position):
+        super().__init__(SpaceShip.asset, position)
+        self.thrust = 0
+        self.thrustframe = 1
+        SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
+        SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
+
+    def step(self):
+        if self.thrust == 1:
+            self.setImage(self.thrustframe)
+            self.thrustframe += 1
+            if self.thrustframe == 4:
+                self.thrustframe = 1
+        else:
+            self.setImage(0)
+
+    def thrustOn(self, event):
+        self.thrust = 1
+        
+    def thrustOff(self, event):
+        self.thrust = 0
+
+
+</pre>
+<h2>專案結果-1</h2>
+<p>我把兔子跳的程式跟太空船程式合併，可是一直跑不出來</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">@language python
+from random import random, randint
+from ggame import (
+    App, 
+    Color, 
+    LineStyle, 
+    Sprite, 
+    RectangleAsset, 
+    ImageAsset, 
+    CircleAsset, 
+    EllipseAsset, 
+    PolygonAsset, 
+    Frame, 
+    MouseEvent, 
+    SoundAsset, 
+    Sound, 
+    TextAsset,
+)
+import math
+from time import time
+
+        
+class Bunny(Sprite):
+    
+    asset = ImageAsset("images/po.png")
+    
+    def __init__(self, position):
+        super().__init__(Bunny.asset, position)
+        # register mouse events
+        App.listenMouseEvent(MouseEvent.mousedown, self.mousedown)
+        App.listenMouseEvent(MouseEvent.mouseup, self.mouseup)
+        App.listenMouseEvent(MouseEvent.mousemove, self.mousemove)
+        self.dragging = False
+                    
+    def step(self):
+        if random() &lt; 0.04:
+            self.x += randint(-20,20)
+            self.y += randint(-20,20)
+        
+    def mousedown(self, event):
+        # capture any mouse down within 50 pixels
+        self.deltax = event.x - (self.x + self.width//2) 
+        self.deltay = event.y - (self.y + self.height//2)
+        if abs(self.deltax) &lt; 40 and abs(self.deltay) &lt; 40:
+            self.dragging = True
+            # only drag one bunny at a time - consume the event
+            event.consumed = True
+            
+    def mousemove(self, event):
+        if self.dragging:
+            self.x = event.x - self.deltax - self.width//2
+            self.y = event.y - self.deltay - self.height//2
+            event.consumed = True
+            
+    def mouseup(self, event):
+        if self.dragging:
+            self.dragging = False
+            event.consumed = True
+            
+
+class Sun(Sprite):
+    
+    asset = ImageAsset("images/sun.png")
+    width = 80
+    height = 76
+    
+    def __init__(self, position):
+        super().__init__(Sun.asset, position)
+        self.mass = 30*1000
+        self.fxcenter = 0.5
+        self.fycenter = 0.5
+        self.circularCollisionModel()
+
+class Vector:
+    
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        
+    def mag(self):
+        return math.sqrt(self.x*self.x + self.y*self.y)
+    
+    def unit(self):
+        r = self.mag()
+        if r == 0:
+            return Vector(0,0)
+        else:
+            return Vector(self.x/r, self.y/r)
+
+class GravitySprite(Sprite):
+    
+    G = 50.0
+
+    def __init__(self, asset, position, velocity, sun):
+        super().__init__(asset, position)
+        self.vx = velocity[0]
+        self.vy = velocity[1]
+        self.sun = sun
+        self.fxcenter = 0.5
+        self.fycenter = 0.5
+        self.rrate = 0.0
+        self.thrust = 0.0
+        self.mass = 1.0
+        
+    def step(self, T, dT):
+        #dt = 0.033
+        R = Vector(self.sun.x-self.x, self.sun.y-self.y)
+        #Ur = R.unit()
+        r = R.mag()
+        Ux, Uy = R.x/r, R.y/r
+        ag = GravitySprite.G*self.sun.mass/R.mag()**2
+        Agx, Agy = Ux*ag, Uy*ag
+        vx, vy = self.vx, self.vy
+        At = self.thrust/self.mass
+        dt2o2 = dT*dT*0.5
+        self.vx = self.vx + (Agx - At*math.sin(self.rotation))* dT
+        self.vy = self.vy + (Agy - At*math.cos(self.rotation))* dT
+        self.x = self.x + self.vx * dT + Agx*dt2o2
+        self.y = self.y + self.vy * dT + Agy*dt2o2
+
+
+class Bullet(GravitySprite):
+    
+    asset = ImageAsset("images/blast.png", Frame(0,0,8,8), 8)
+    pewasset = SoundAsset("sounds/pew1.mp3")
+    
+    def __init__(self, app, sun):
+        super().__init__(Bullet.asset, (0,0), (0,0), sun)
+        self.visible = False
+        self.firing = False
+        self.time = 0
+        self.circularCollisionModel()
+        self.pew = Sound(Bullet.pewasset)
+        self.pew.volume = 10
+        
+    def shoot(self, position, velocity, time):
+        self.position = position
+        self.vx = velocity[0]
+        self.vy = velocity[1]
+        self.time = time
+        self.visible = True
+        self.firing = True
+        self.pew.play()
+
+    def step(self, T, dT):
+        if self.time &gt; 0:
+            self.time = self.time - dT
+            if self.visible:
+                self.nextImage(True)
+                super().step(T, dT)
+                if self.collidingWith(self.sun):
+                    self.visible = False
+                    ExplosionSmall(self.position)
+                ships = []
+                ships = self.collidingWithSprites(Ship1)
+                ships.extend(self.collidingWithSprites(Ship2))
+                if len(ships):
+                    if not self.firing and ships[0].visible:
+                        ships[0].explode()
+                        self.visible = False
+                elif self.firing:
+                    self.firing = False
+            
+                
+        else:
+            if self.visible:
+                self.visible = False
+            self.time = 0
+
+
+class HealthBar:
+    
+    def __init__(self, indicatorasset, initvalue, position, app):
+        self.sprites = [Sprite(indicatorasset, (0,app.height-75)) for i in range(initvalue)]
+        for s in self.sprites:
+            s.scale = 0.4
+        width = self.sprites[0].width
+        if position == 'left':
+            x = 50
+            step = width+5
+        else:
+            x = app.width - 50 - width
+            step = -width-5
+        for s in self.sprites:
+            s.x = x
+            x = x + step
+        self.restart()
+        
+    def restart(self):
+        for s in self.sprites:
+            s.visible = True
+        self.count = len(self.sprites)
+        
+    def dead(self):
+        return self.count == 0
+        
+    def killone(self):
+        if self.count &gt; 0:
+            self.count =  self.count - 1
+            self.sprites[self.count].visible = False
+
+
+class Ship(GravitySprite):
+
+    R = 2.0
+    bullets = 20
+    healthcount = 6
+    reappearasset = SoundAsset("sounds/reappear.mp3")
+    
+    def __init__(self, asset, app, position, velocity, sun):
+        self.bullets = []
+        for i in range(Ship.bullets):
+            self.bullets.append(Bullet(app, sun))
+        super().__init__(asset, position, velocity, sun)
+        self.initposition = position
+        self.initvelocity = self.vx, self.vy
+        self.initrotation = self.rotation
+        self.app = app
+        self.mass = 1.0
+        self.circularCollisionModel()
+        self.imagex = 0
+        self.reappear = Sound(Ship.reappearasset)
+        self.reappear.volume = 40
+        self.waitspawn = 0
+        self.respawnplayed = False
+        healthpos = 'left' if position[0] &lt; app.width/2 else 'right'
+        self.health = HealthBar(asset, Ship.healthcount, healthpos, app)
+        self.dead = False
+
+    def registerKeys(self, keys):
+        commands = ["left", "right", "forward", "fire"]
+        self.keymap = dict(zip(keys, commands))
+        [self.app.listenKeyEvent("keydown", k, self.controldown) for k in keys]
+        [self.app.listenKeyEvent("keyup", k, self.controlup) for k in keys]
+
+    def shootvector(self):
+        vel = 150
+        xv = vel*(-math.sin(self.rotation))
+        yv = vel*(-math.cos(self.rotation))
+        return xv + self.vx, yv + self.vy
+        
+
+    def controldown(self, event):
+        if self.visible:
+            command = self.keymap[event.key]
+            if command == "left":
+                self.rrate = Ship.R
+            elif command == "right":
+                self.rrate = -Ship.R
+            elif command == "forward":
+                self.thrust = 40.0
+                self.imagex = 1 # start the animated rockets
+                self.setImage(self.imagey)
+            elif command == "fire":
+                for bullet in self.bullets:
+                    if bullet.time == 0:
+                        bullet.shoot(self.position, self.shootvector(), 10)
+                        break
+                        
+            
+    def controlup(self, event):
+        command = self.keymap[event.key]
+        if command in ["left", "right"]:
+            self.rrate = 0.0
+        elif command == "forward":
+            self.thrust = 0.0
+            self.imagex = 0 # stop the animated rockets
+            self.setImage(self.imagex)
+            
+    def step(self, T, dT):
+        if self.waitspawn &gt; 0:
+            self.waitspawn = self.waitspawn - dT
+            if self.waitspawn &lt; 1 and not self.respawnplayed:
+                self.reappear.play()
+                self.respawnplayed = True
+            if self.waitspawn &lt;= 0:
+                self.reset()
+        for bullet in self.bullets:
+            bullet.step(T, dT)
+        if self.visible:
+            super().step(T, dT)
+            self.rotation = self.rotation + self.rrate * dT
+            if self.collidingWith(self.sun):
+                self.explode()
+            if self.thrust != 0.0:
+                self.imagex = self.imagex + 1    # animate the rockets
+                if self.imagex == 4:
+                    self.imagex = 1
+                self.setImage(self.imagex)
+            if (self.x &lt; -100 or self.x &gt; self.app.width + 100 or
+                self.y &lt; -100 or self.y &gt; self.app.height + 100):
+                self.explode()
+        
+
+    def explode(self):
+        self.visible = False
+        ExplosionBig(self.position)
+        self.waitspawn = 5
+
+    def reset(self):
+        if not self.health.dead():
+            self.position = self.initposition
+            self.vx, self.vy = self.initvelocity
+            self.rotation = self.initrotation
+            self.visible = True
+            self.respawnplayed = False
+            self.health.killone()
+        else:
+            self.dead = True
+
+    def newgame(self):
+        self.health.restart()
+        self.dead = False
+        self.reset()
+            
+class Ship1(Ship):
+    
+    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
+        Frame(227,0,292-227,125), 4, 'vertical')
+        
+    def __init__(self, app, position, velocity, sun):
+        super().__init__(Ship1.asset, app, position, velocity, sun)
+        self.registerKeys(["a", "d", "w", "space"])
+        
+    def step(self, T, dT):
+        super().step(T, dT)
+        if self.visible:
+            collides = self.collidingWithSprites(Ship2)
+            if len(collides):
+                if collides[0].visible:
+                    collides[0].explode()
+                    self.explode()
+        
+class Ship2(Ship):
+    
+    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
+        Frame(0,0,86,125), 4, 'vertical')
+        
+    def __init__(self, app, position, velocity, sun):
+        super().__init__(Ship2.asset, app, position, velocity, sun)
+        self.registerKeys(["left arrow", "right arrow", "up arrow", "enter"])
+
+    def step(self, T, dT):
+        super().step(T, dT)
+        if self.visible:
+            collides = self.collidingWithSprites(Ship1)
+            if len(collides):
+                if collides[0].visible:
+                    collides[0].explode()
+                    self.explode()
+
+class ExplosionSmall(Sprite):
+    
+    asset = ImageAsset("images/explosion1.png", Frame(0,0,128,128), 10)
+    boomasset = SoundAsset("sounds/explosion1.mp3")
+    
+    def __init__(self, position):
+        super().__init__(ExplosionSmall.asset, position)
+        self.image = 0
+        self.center = (0.5, 0.5)
+        self.boom = Sound(ExplosionSmall.boomasset)
+        self.boom.play()
+        
+    def step(self):
+        self.setImage(self.image//2)  # slow it down
+        self.image = self.image + 1
+        if self.image == 20:
+            self.destroy()
+
+class ExplosionBig(Sprite):
+    
+    asset = ImageAsset("images/explosion2.png", Frame(0,0,4800/25,195), 25)
+    boomasset = SoundAsset("sounds/explosion2.mp3")
+    
+    def __init__(self, position):
+        super().__init__(ExplosionBig.asset, position)
+        self.image = 0
+        self.center = (0.5, 0.5)
+        self.boom = Sound(ExplosionBig.boomasset)
+        self.boom.play()
+        
+    def step(self):
+        self.setImage(self.image//2)  # slow it down
+        self.image = self.image + 1
+        if self.image == 50:
+            self.destroy()
+
+class Spacewar(App):
+    
+    strings = {'winner': 'WINNER!',
+        'tie': 'TIE!',
+        'space': 'Press SPACE to play.',
+        'left': 'AWD\nSpace to FIRE',
+        'right': 'Arrow Keys\nEnter to FIRE',
+        }
+        
+    def __init__(self):
+        super().__init__()
+        for i in range(20):
+            Bunny((randint(50,self.width),randint(50,self.height)))
+        self.sun = Sun((self.width/2, self.height/2))
+        self.ship1 = Ship1(self, (self.width/2-140,self.height/2), (0,-120), self.sun)
+        self.ship2 = Ship2(self, (self.width/2+140,self.height/2), (0,120), self.sun)
+        self.tsprites = {k:Sprite(TextAsset(text=v, width=200, align='center',style='20px Arial', fill=Color(0xff2222,1))) 
+            for k, v in Spacewar.strings.items()}
+        self.tsprites['winner'].visible = False
+        self.tsprites['winner'].y = self.height/2
+        self.tsprites['tie'].visible = False
+        self.tsprites['tie'].position = (self.width/2 - 100, self.height/2 + 50)
+        self.tsprites['space'].position = (self.width/2 - 100, self.height*3/4)
+        self.tsprites['left'].position = (self.width/4 - 50, self.height/2)
+        self.tsprites['right'].position = (self.width*3/4 - 50, self.height/2)
+        self.state = 'instructions'
+        self.listenKeyEvent('keydown', 'space', self.space)
+
+    def space(self, evt):
+        if self.state in ['instructions', 'gameover']:
+            for t in self.tsprites.values():
+                t.visible = False
+            self.state = 'playing'
+            self.Tlast = time()
+            evt.consumed = True
+            self.ship1.newgame()
+            self.ship2.newgame()
+
+    def step(self):
+        bu = self.getSpritesbyClass(Bunny)
+        for bunny in bu:
+            bunny.step()
+            bunny.scale = 0.5
+        explosions = self.getSpritesbyClass(ExplosionSmall)
+        for explosion in explosions:
+            explosion.step()
+        explosions = self.getSpritesbyClass(ExplosionBig)
+        for explosion in explosions:
+            explosion.step()
+        if self.state == 'instructions':
+            self.tsprites['space'].visible = True
+            self.tsprites['left'].visible = True
+            self.tsprites['right'].visible = True
+        elif self.state == 'playing':
+            T = time()
+            dT = T-self.Tlast
+            self.Tlast = T
+            self.ship1.step(T, dT)
+            self.ship2.step(T, dT)
+            if self.ship1.dead or self.ship2.dead:
+                self.state = 'gameover'
+        elif self.state == 'gameover':
+            self.tsprites['space'].visible = True
+            if self.ship1.dead and self.ship2.dead:
+                self.tsprites['tie'].visible = True
+            else:
+                self.tsprites['winner'].visible = True
+                self.tsprites['winner'].x = self.width*3/4-50 if self.ship1.dead else self.width/4-50
+
+app = Spacewar()
+app.run()
+</pre>
+<img alt="" height="455" src="/images/p37_20-30-27.png" width="600"/>
+<h2>專案結果-2</h2>
+<p></p>
+<h1>Python 手冊</h1>
+<p>計算機程式教材:  <a href="http://mde.tw/cp2018/content/">http://mde.tw/cp2018/content/</a> </p>
+<p>可攜程式下載: <a href="https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing">p37.7z</a></p>
+<h2>練習-1</h2>
+<p><span style="color: #3366ff;"><strong>有序可變動列表 List</strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90]
+print(ad)        
+print(ad[0])    
+print(ad[3])    
+print(ad[1:4]) </pre>
+<p>[12, 60, 25, 70, 90]<br/>12<br/>70<br/>[60, 25, 70]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90]
+ad[0]=55 # 把 55 放到列表中的第一個位置
+print(ad)</pre>
+<p>[55, 60, 25, 70, 90]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,22,60,80,90]
+ad[1:4]=[] # 連續刪除列表中從編號 1 到編號 4(不包括) 的資料
+print(ad)</pre>
+<p>[12, 90]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90]
+ad=ad+[12,33]  #也可以用ad+=[12,33]
+print(ad)
+</pre>
+<p>[12,60,25,70,90,12,33]</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ad=[12,60,25,70,90] # 取得列表的長度 len(列表資料)
+bc=len(ad)
+print(bc)</pre>
+<p>5</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">adc=[[3,4,5],[6,7,8]]
+print(adc[0])
+print([adc[0][1])
+print(adc[0][0:2])
+print(adc)
+adc[0][0:2]=[5,5,5] #[0][0:2]代表[3,4,5]的[3,4]
+print(adc)</pre>
+<p>[3, 4, 5]<br/>4<br/>[3, 4]<br/>[[3, 4, 5], [6, 7, 8]]<br/>[5, 5, 5, 5], [6, 7, 8]]<br/>[[5,5,5,5,],[6,7,8]]</p>
+<p><span style="color: #3366ff;"><strong>有序不可變動列表 Tuple</strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">sd=(3,4,5)
+# sd[0]=5 # 錯誤︰Tuple的資料不可以變動
+print(sd[2])
+print(sd[0:2])</pre>
+<p>5<br/>(3, 4)</p>
+<p>其餘跟上面的內容相似只差於不可改動</p>
+<h2>練習-2</h2>
+<p><span style="color: #3366ff;"><strong># 集合的運用</strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">s1={3,4,5}
+print(3 in s1)
+print(10 in s1)
+print(10 not in s1)</pre>
+<p>True<br/>False<br/>True</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">s1={3,4,5}
+s2={4,5,6,7}
+s3=s1&amp;s2 # 交集︰取兩個集合中，相同的資料
+print(s3)
+s3=s1|s2 # 聯集︰取兩個合中的所有資料，但不重複取
+print(s3)
+s3=s1-s2 # 差集︰從 s1 中，減去和 s2 重疊的部分
+print(s3)
+s3=s1^s2 # 反交集︰取兩個集合中，重複的部分
+print(s3)</pre>
+<p>{4, 5}<br/>{3, 4, 5, 6, 7}<br/>{3}<br/>{3, 6, 7}</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">s=set("Hello") # 把字串中的字母折拆成集合︰ set(字串)
+print(s)
+print("H" in s)
+print("A" in s)</pre>
+<p>{'H', 'e', 'l', 'o'}<br/>True<br/>False</p>
+<p><span style="color: #3366ff;"><strong>#字典的運用︰key-value 配對</strong></span><span style="color: #3366ff;"><strong></strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">dic={"apple":"蘋果","bug":"蟲蟲"}
+print(dic)
+print(dic["apple"])
+dic["apple"]="小蘋果"
+print(dic["apple"])</pre>
+<p>{'apple': '蘋果', 'bug': '蟲蟲'}<br/>蘋果<br/>小蘋果</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">dic={"apple":"蘋果","bug":"蟲蟲"}
+print("apple" in dic) # 判斷 key 是否存在
+print("test" in dic)
+print("test" not in dic)
+del dic["apple"] # del(刪除)字典中的鍵值對 (key-value pair)
+print(dic)
+</pre>
+<p>True<br/>False<br/>True<br/>{'bug': '蟲蟲'}</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">dic={x:x*2 for x in [3,4,5]} # 從列表[3,4,5]的資料中產生字典
+print(dic)</pre>
+<p>{3: 6, 4: 8, 5: 10}</p>
+<h2>練習-3</h2>
+<p><span style="color: #3366ff;"><strong>#判斷式if<br/></strong></span><span style="color: #3366ff;"><strong></strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">if True:
+   print("True 執行")
+else:
+   print("False 執行")</pre>
+<p><span>True 執行</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">if False:
+   print("True 執行")
+else:
+   print("False 執行")</pre>
+<p><span>False 執行</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">x=input("請輸入數字︰") # 取得字串形式的使用者輸入
+x=int(x) # 將字串型態轉換成數字型態
+if x&gt;200:
+    print("大於 200")
+elif x&gt;100:
+    print("大於 100，小於等於 200")
+else:
+    print("小於等於 100")</pre>
+<p>輸入42<br/>小於等於 100<br/>輸入150<br/>大於 100，小於等於 200</p>
+<p><strong><span style="color: #3366ff;">#四則運算</span></strong></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">n1=int(input("請輸入數字一︰"))
+op=input("請輸入運算︰+, -, *, /:")
+n2=int(input("請輸入數字二︰"))
+if op=="+":
+    print(n1+n2)
+elif op=="-":
+    print(n1-n2)
+elif op=="*":
+    print(n1*n2)
+elif op=="/":
+    print(n1/n2)
+else:
+    print("不支援的運算")</pre>
+<p><span>輸入84<br/>輸入+<br/>輸入55<br/>139</span></p>
+<h2>練習-4</h2>
+<p><span style="color: #3366ff;"><strong>#while 迴圈</strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">n=1
+while n&lt;=5:
+   print(n)  #輸出所有true迴圈
+   n+=1</pre>
+<p>1<br/>2<br/>3<br/>4<br/>5</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">n=1
+sum=0 
+while n&lt;=3:
+  sum=sum+n
+  n+=1
+print(sum) #紀錄累加的結果</pre>
+<p>6</p>
+<p><span style="color: #3366ff;"><strong>#for 迴圈</strong></span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">for x in "apple":
+    print(x)   #輸出列表</pre>
+<p>a<br/>p<br/>p<br/>l<br/>e</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">for x in range(5):  #range代表列表包含開頭不包含結束
+     print(x)</pre>
+<p>0<br/>1<br/>2<br/>3<br/>4</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">sum=0
+for x in range(5,10):   
+     sum=sum+x   #累加結果5+6+7...+9
+print(sum)</pre>
+<p>35</p>
+<p></p>
+<h2>練習-5</h2>
+<h1>OnShape 手冊</h1>
+<p><a href="https://www.onshape.com/">https://www.onshape.com/</a> </p>
+<p>電腦輔助設計實習課程教材: <a href="http://mde.tw/cadp2018/content/">http://mde.tw/cadp2018/content/</a> </p>
+<h1>Fusion 360</h1>
+<p><a href="https://www.autodesk.com/products/fusion-360/students-teachers-educators">https://www.autodesk.com/products/fusion-360/students-teachers-educators</a> </p>
