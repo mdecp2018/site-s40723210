@@ -68,7 +68,6 @@
 <p>● ”modules” or “packages”：通常是其他人寫好的函數或指令，打包成一個「工具庫」<br/> 方便分享使用。（非python內建，可能會需要下載安裝）<br/>○     本課程會用到的library: numpy (array), matplotlib (基本繪圖), basemap (地圖),<br/>         netCDF (讀nc檔)<br/>● 使用方式：import module_name<br/>○     在執行工具庫內的指令之前，就要先把modules 引進來（不然python不會認得<br/>        非內建的指令）<br/>○     使用工具庫內的指令：module_name.function (or module_name.constant)<br/>○     可以使用import module_name as xxx (xxx是你自己取的縮寫）<br/>        使用指令的語法就簡化成xxx.function，例如:<br/>             import math as m<br/>             x=m.cos(m.pi)</p>
 <h1>組員操作影片</h1>
 <p>每週各分組組員必須將參與分組協同過程之電腦操作流程錄成影片後, 上傳至各自的 Youtube 帳號區, 並嵌入各分組網站頁面中.</p>
-<p></p>
 <h2>Week1</h2>
 <p><span>1.建立github帳號</span></p>
 <p><span>2.建立倉儲: s40723210.github.io</span></p>
@@ -145,6 +144,14 @@
 <h2>更多操作影片-3</h2>
 <p style="text-align: center;"><strong>更新版本退回</strong></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/W-XmTIETsh0" width="560"></iframe></p>
+<h1>Ggame 字典</h1>
+<ul>
+<li><a href="https://mdecp2018.github.io/finalproject-bg3/content/ggame%E6%87%89%E7%94%A8%E7%A8%8B%E5%BA%8F%E9%A1%9E.html">ggame應用程序類</a></li>
+<li><a href="https://mdecp2018.github.io/finalproject-bg3/content/%E4%BA%8B%E4%BB%B6.html">事件</a></li>
+<li><a href="https://mdecp2018.github.io/finalproject-bg3/content/ggame%E8%B3%87%E7%94%A2.html">ggame資產</a></li>
+<li><a href="https://mdecp2018.github.io/finalproject-bg3/content/%E8%81%B2%E9%9F%B3.html">聲音</a></li>
+<li><a href="https://mdecp2018.github.io/finalproject-bg3/content/%E7%B2%BE%E9%9D%88.html">精靈</a></li>
+</ul>
 <h1>分組專案(個人)</h1>
 <p><strong>這是在分組協同中自己所貢獻的進度</strong></p>
 <h2>倉儲規劃</h2>
@@ -212,7 +219,8 @@
 <p><strong>week16</strong></p>
 <p>這一周，老師把期末要交的東西都列出來，突然就要我們上台報告，還要交個人的學習歷程影片，有一點難受，因為期末有點忙而且又放假，再加上很多人根本不知道要做甚麼，所以要趕工把東西都做出來很累，接著就讓我們自己整理網頁和專題，我終於把遊戲的雛型給做出來，之後就要開始增加新東西了。</p>
 <p><strong>week17</strong></p>
-<p>補課三次，<strong>#判斷式if </strong><strong>#while 迴圈 </strong><strong>#for 迴圈 # 集合的運用 #字典的運用 #有序可變動列表 List #有序不可變動列表 Tuple，</strong>以上是我整理學長所教的大鋼，基本上就是講解python的語法和運用，還有稍微講一下遊戲中的語法應用，這些python我有自己先學習一小部份了，所以學長講的我就聽得懂，只是有些我沒自學的還是要花時間搞懂。</p><h2>遊戲解析-1</h2>
+<p>補課三次，<strong>#判斷式if </strong><strong>#while 迴圈 </strong><strong>#for 迴圈 # 集合的運用 #字典的運用 #有序可變動列表 List #有序不可變動列表 Tuple，</strong>以上是我整理學長所教的大鋼，基本上就是講解python的語法和運用，還有稍微講一下遊戲中的語法應用，這些python我有自己先學習一小部份了，所以學長講的我就聽得懂，只是有些我沒自學的還是要花時間搞懂。</p>
+<h2>遊戲解析-1</h2>
 <p>剛開始有老師給個範例<a href="https://github.com/mdecourse/kmolgame">ggame</a> 來讓我們了解</p>
 <p><img alt="" height="212" src="/images/p37_22-43-38.png" width="400"/></p>
 <p>裡面有很多的範例像是完整的game1 如下</p>
@@ -1723,7 +1731,58 @@ myapp.listenKeyEvent('keydown', 'left arrow', ballleft)
      
 myapp.run(step)
 </pre>
-<p><br/><br/></p>
+<p><img alt="" height="403" src="/images/p37_23-38-10.png" width="500"/></p>
+<h2>專案開發-3</h2>
+<p>下面這是一個案空白鍵的時候，會噴射火箭的變化動作，我要把這個程式變成主角的攻擊動畫。</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">@language python
+from ggame import App, RectangleAsset, ImageAsset, Sprite, LineStyle, Color, Frame
+
+class SpaceShip(Sprite):
+
+    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
+        Frame(227,0,65,125), 4, 'vertical')
+
+    def __init__(self, position):
+        super().__init__(SpaceShip.asset, position)
+        self.thrust = 0
+        self.thrustframe = 1
+        SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
+        SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
+
+
+    def step(self):
+        if self.thrust == 1:
+            self.setImage(self.thrustframe)
+            self.thrustframe += 1
+            if self.thrustframe == 4:
+                self.thrustframe = 1
+        else:
+            self.setImage(0)
+
+    def thrustOn(self, event):
+        self.thrust = 1
+        
+    def thrustOff(self, event):
+        self.thrust = 0
+
+
+class SpaceGame(App):
+
+    def __init__(self):
+        super().__init__()
+        SpaceShip((600,300))
+
+    def step(self):
+        for ship in self.getSpritesbyClass(SpaceShip):
+            ship.step()
+
+        
+myapp = SpaceGame()
+myapp.run()
+
+</pre>
+<p><img alt="" height="365" src="/images/p37_23-34-48.png" width="500"/></p>
+<p><br/><br/><br/></p>
 <h1>期末個人報告</h1>
 <p>我的期末課程學習報告</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/9O273YR-MzU" width="560"></iframe></p>
