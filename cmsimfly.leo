@@ -2485,7 +2485,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 &lt;li&gt;&lt;a href="./../reveal/index.html"&gt;reveal&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./../blog/index.html"&gt;blog&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./../music/index.html"&gt;music&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="./../game/index.html"&gt;mygame&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://s40723210.github.io/s40723210.github.io/mygame.html"&gt;mygame&lt;/a&gt;&lt;/li&gt;
 '''
     outstring += '''
 &lt;/ul&gt;

@@ -1919,7 +1919,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 <li><a href="./../reveal/index.html">reveal</a></li>
 <li><a href="./../blog/index.html">blog</a></li>
 <li><a href="./../music/index.html">music</a></li>
-<li><a href="./../game/index.html">mygame</a></li>
+<li><a href="https://s40723210.github.io/s40723210.github.io/mygame.html">mygame</a></li>
 '''
     outstring += '''
 </ul>
