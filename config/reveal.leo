@@ -48,8 +48,32 @@
 <v t="leo.20181101134005.1" a="E"><vh>W7</vh>
 <v t="leo.20181101134005.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20181101134010.1" a="E"><vh>W8</vh>
+<v t="leo.20181101134010.1"><vh>W8</vh>
 <v t="leo.20181101134010.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20190103141345.1" a="E"><vh>W10</vh>
+<v t="leo.20190103141345.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20190103141507.1"><vh>W11</vh>
+<v t="leo.20190103141507.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20190103141509.1"><vh>W12</vh>
+<v t="leo.20190103141509.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20190103141510.1"><vh>W13</vh>
+<v t="leo.20190103141510.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20190103141512.1"><vh>W14</vh>
+<v t="leo.20190103141512.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20190103141514.1"><vh>W15</vh>
+<v t="leo.20190103141514.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20190103141516.1"><vh>W16</vh>
+<v t="leo.20190103141516.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20190103141517.1"><vh>W17</vh>
+<v t="leo.20190103141517.2"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20180827201621.11" a="E"><vh>快捷鍵</vh>
 <v t="leo.20180827201621.12"><vh>投影片快捷鍵</vh></v>
@@ -500,6 +524,134 @@ make.start()
 <t tx="leo.20181101134010.2">#  Week8
 
 心得:第八周開始使用gitlab，這樣可以同時push兩個不同的倉儲，就可以避免一個倉儲壞掉了就沒有了，同步的時候有點難，跟githud指令不太一樣，所以我把兩個帳號密碼都用成一樣的，這樣就不太會搞混和忘記了。
+
+
+
+</t>
+<t tx="leo.20190103141345.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103141345.2">#  Week10
+
+心得:這禮拜是學長來跟我們說明如何利用新版 P37-18.11 中的 eric6 軟體，可以利用內部的一些特殊模組，來做出一些連動的東西，而這次學長教的是利用slider、porgress bar、button來做一個小小的應用程式，我覺得很有趣可以自己創作想要的東西，像是登入器就可以利用eric6來做出來，可以認真的來學習這個軟體。
+
+
+
+</t>
+<t tx="leo.20190103141507.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103141507.2">#  Week10
+
+心得:
+
+
+
+</t>
+<t tx="leo.20190103141509.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103141509.2">#  Week10
+
+心得:
+
+
+
+</t>
+<t tx="leo.20190103141510.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103141510.2">#  Week10
+
+心得:
+
+
+
+</t>
+<t tx="leo.20190103141512.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103141512.2">#  Week10
+
+心得:
+
+
+
+</t>
+<t tx="leo.20190103141514.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103141514.2">#  Week10
+
+心得:
+
+
+
+</t>
+<t tx="leo.20190103141516.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103141516.2">#  Week10
+
+心得:
+
+
+
+</t>
+<t tx="leo.20190103141517.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190103141517.2">#  Week10
+
+心得:
 
 
 
