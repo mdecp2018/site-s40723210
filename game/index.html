@@ -23,24 +23,14 @@ brython({debug:1, pythonpath:['static']});
 </script>
 <script type="text/python">
 from random import random, randint
-from ggame import (
-    App, 
-    Color, 
-    LineStyle, 
+from ggame import (App, 
     Sprite, 
-    RectangleAsset, 
     ImageAsset, 
     CircleAsset, 
     EllipseAsset, 
-    PolygonAsset, 
     Frame, 
     MouseEvent, 
-    SoundAsset, 
-    Sound, 
-    TextAsset,
 )
-import math
-from time import time
 
 class Stars(Sprite):
 
