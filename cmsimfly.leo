@@ -17,7 +17,7 @@
 <v t="leo.20180702142719.1"><vh>@button start wsgi</vh></v>
 <v t="leo.20180702142849.1"><vh>@button stop wsgi</vh></v>
 </v>
-<v t="leo.20180702145555.1"><vh>http start/stop</vh>
+<v t="leo.20180702145555.1" a="E"><vh>http start/stop</vh>
 <v t="leo.20180702145442.1"><vh>@button start http.server</vh></v>
 <v t="leo.20180702145458.1"><vh>@button stop http.server</vh></v>
 </v>
@@ -2485,7 +2485,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 &lt;li&gt;&lt;a href="./../reveal/index.html"&gt;reveal&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./../blog/index.html"&gt;blog&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./../music/index.html"&gt;music&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="./../game/mygame.html"&gt;Mygame&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./../game/index.html"&gt;mygame&lt;/a&gt;&lt;/li&gt;
 '''
     outstring += '''
 &lt;/ul&gt;
