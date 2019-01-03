@@ -13,7 +13,7 @@
 <v t="amd.20160714225308.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="amd.20160714225308.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="leo.20180702145534.1"><vh>wsgi start/stop</vh>
+<v t="leo.20180702145534.1" a="E"><vh>wsgi start/stop</vh>
 <v t="leo.20180702142719.1"><vh>@button start wsgi</vh></v>
 <v t="leo.20180702142849.1"><vh>@button stop wsgi</vh></v>
 </v>
@@ -2485,6 +2485,7 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 &lt;li&gt;&lt;a href="./../reveal/index.html"&gt;reveal&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./../blog/index.html"&gt;blog&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="./../music/index.html"&gt;music&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="./../game/mygame.html"&gt;Mygame&lt;/a&gt;&lt;/li&gt;
 '''
     outstring += '''
 &lt;/ul&gt;
