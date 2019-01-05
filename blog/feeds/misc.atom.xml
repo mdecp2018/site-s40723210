@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>s40723210 網誌 - Misc</title><link href="https://mdecp2018.github.io/site-s40723210/blog/" rel="alternate"></link><link href="https://mdecp2018.github.io/site-s40723210/blog/feeds/misc.atom.xml" rel="self"></link><id>https://mdecp2018.github.io/site-s40723210/blog/</id><updated>2018-12-24T13:20:00+08:00</updated><entry><title>Week-15</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W15.html" rel="alternate"></link><published>2018-12-24T13:20:00+08:00</published><updated>2018-12-24T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-12-24:/site-s40723210/blog/2018-Fall-Project-Blog-W15.html</id><summary type="html">&lt;p&gt;分組協同報告&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>s40723210 網誌 - Misc</title><link href="./" rel="alternate"></link><link href="./feeds/misc.atom.xml" rel="self"></link><id>./</id><updated>2018-12-25T13:20:00+08:00</updated><entry><title>Week-16</title><link href="./2018-Fall-Project-Blog-W16.html" rel="alternate"></link><published>2018-12-25T13:20:00+08:00</published><updated>2018-12-25T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-12-25:./2018-Fall-Project-Blog-W16.html</id><summary type="html">&lt;p&gt;期末評分標準&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;期末評分標準&lt;/p&gt;
+
+
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;這一周，老師把期末要交的東西都列出來，突然就要我們上台報告，還要交個人的學習歷程影片，有一點難受，因為期末有點忙而且又放假，再加上很多人根本不知道要做甚麼，所以要趕工把東西都做出來很累，接著就讓我們自己整理網頁和專題，我終於把遊戲的雛型給做出來，之後就要開始增加新東西了。&lt;/p&gt;</content><category term="W16"></category></entry><entry><title>Week-15</title><link href="./2018-Fall-Project-Blog-W15.html" rel="alternate"></link><published>2018-12-24T13:20:00+08:00</published><updated>2018-12-24T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-12-24:./2018-Fall-Project-Blog-W15.html</id><summary type="html">&lt;p&gt;分組協同報告&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;分組協同報告&lt;/p&gt;
 
 
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;為了要期末報告，老師就教我們用一種，分組協同報告的東西，而這種東西呢是利用，leo-editor來進行協同的，因為老師是在二年級上課的時候，操作和錄影還有講解，所以我們要自己看，以前老師拍的影片，而這種分組協同報告，是每個組員update都會有紀錄的東西，就可以清楚的知道誰做了什麼，也可以有紀錄查看以前的資料，就可以避免一次做錯就要全部重做。&lt;/p&gt;</content><category term="W15"></category></entry><entry><title>Week-14</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W14.html" rel="alternate"></link><published>2018-12-17T13:20:00+08:00</published><updated>2018-12-17T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-12-17:/site-s40723210/blog/2018-Fall-Project-Blog-W14.html</id><summary type="html">&lt;p&gt;分組倉儲 login&lt;/p&gt;
+&lt;p&gt;為了要期末報告，老師就教我們用一種，分組協同報告的東西，而這種東西呢是利用，leo-editor來進行協同的，因為老師是在二年級上課的時候，操作和錄影還有講解，所以我們要自己看，以前老師拍的影片，而這種分組協同報告，是每個組員update都會有紀錄的東西，就可以清楚的知道誰做了什麼，也可以有紀錄查看以前的資料，就可以避免一次做錯就要全部重做。&lt;/p&gt;</content><category term="W15"></category></entry><entry><title>Week-14</title><link href="./2018-Fall-Project-Blog-W14.html" rel="alternate"></link><published>2018-12-17T13:20:00+08:00</published><updated>2018-12-17T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-12-17:./2018-Fall-Project-Blog-W14.html</id><summary type="html">&lt;p&gt;分組倉儲 login&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;分組倉儲 login&lt;/p&gt;
 
 
@@ -13,7 +18,7 @@
 &lt;p&gt;2.搜尋check login&lt;/p&gt;
 &lt;p&gt;3.新增if/elif判斷式&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;目前我有把一些kmolgame的範例，改成我想做的小遊戲，可是有很多指令是範例裡面沒有的，剛好今天是交python語法，我們學到的東西是if判斷，當我們在密碼輸入bg3時會出現hellow world，有多寫一個else，就是用來判斷輸入的，在遊戲可以做出猜數字的程式，有一點用不太到呢。&lt;/p&gt;</content><category term="W14"></category></entry><entry><title>Week-13</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W13.html" rel="alternate"></link><published>2018-12-10T13:20:00+08:00</published><updated>2018-12-10T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-12-10:/site-s40723210/blog/2018-Fall-Project-Blog-W13.html</id><summary type="html">&lt;p&gt;Ggame 課程教學&lt;/p&gt;
+&lt;p&gt;目前我有把一些kmolgame的範例，改成我想做的小遊戲，可是有很多指令是範例裡面沒有的，剛好今天是交python語法，我們學到的東西是if判斷，當我們在密碼輸入bg3時會出現hellow world，有多寫一個else，就是用來判斷輸入的，在遊戲可以做出猜數字的程式，有一點用不太到呢。&lt;/p&gt;</content><category term="W14"></category></entry><entry><title>Week-13</title><link href="./2018-Fall-Project-Blog-W13.html" rel="alternate"></link><published>2018-12-10T13:20:00+08:00</published><updated>2018-12-10T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-12-10:./2018-Fall-Project-Blog-W13.html</id><summary type="html">&lt;p&gt;Ggame 課程教學&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;Ggame 課程教學&lt;/p&gt;
 
 
@@ -23,7 +28,7 @@
 &lt;p&gt;3.從最簡單的Ggame範例複製一個@clean simple1.html&lt;/p&gt;
 &lt;p&gt;4.然後就可以開始更改了&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;我們的專題就是一個小遊戲，老師有用了一個kmolgame的leo來讓我們了解，但是說實在的，我們頂多改內建的程式變換圖片或速度或者是大小而已，要我們做出一個小遊戲的話，要有說明那些指令是做甚麼的，可是說明大多都是英文，而且我們對python的語法一竅不通，是需要一點時間才能理解的，所以可能我們做出來的遊戲會遇到一堆的問題。&lt;/p&gt;</content><category term="W13"></category></entry><entry><title>Week-12</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W12.html" rel="alternate"></link><published>2018-12-03T13:20:00+08:00</published><updated>2018-12-03T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-12-03:/site-s40723210/blog/2018-Fall-Project-Blog-W12.html</id><summary type="html">&lt;p&gt;heroku 同步倉儲&lt;/p&gt;
+&lt;p&gt;我們的專題就是一個小遊戲，老師有用了一個kmolgame的leo來讓我們了解，但是說實在的，我們頂多改內建的程式變換圖片或速度或者是大小而已，要我們做出一個小遊戲的話，要有說明那些指令是做甚麼的，可是說明大多都是英文，而且我們對python的語法一竅不通，是需要一點時間才能理解的，所以可能我們做出來的遊戲會遇到一堆的問題。&lt;/p&gt;</content><category term="W13"></category></entry><entry><title>Week-12</title><link href="./2018-Fall-Project-Blog-W12.html" rel="alternate"></link><published>2018-12-03T13:20:00+08:00</published><updated>2018-12-03T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-12-03:./2018-Fall-Project-Blog-W12.html</id><summary type="html">&lt;p&gt;heroku 同步倉儲&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;heroku 同步倉儲&lt;/p&gt;
 
 
@@ -36,7 +41,7 @@
 &lt;p&gt;4.更新倉儲加入 "runtime.txt" "Procfile" "requirements.txt"&lt;/p&gt;
 &lt;p&gt;5.一樣步驟git push，連結githu倉儲&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;而現在要開始辦heroku網頁帳號，由組長來創一個app，來讓我們可以跟github同步，我原本以為可以直接在heroku網頁做改動，可是必須要有一個主機才可以實現這個功能，所以不能直接改還是要在github用上船的，讓我有一點小失望，我覺得heroku網站的用意應該是，讓我們有兩個倉儲可以防止，其中一個資料消失時還有備用的。&lt;/p&gt;</content><category term="W12"></category></entry><entry><title>Week-11</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W11.html" rel="alternate"></link><published>2018-11-26T13:20:00+08:00</published><updated>2018-11-26T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-11-26:/site-s40723210/blog/2018-Fall-Project-Blog-W11.html</id><summary type="html">&lt;p&gt;heroky 課程解說&lt;/p&gt;
+&lt;p&gt;而現在要開始辦heroku網頁帳號，由組長來創一個app，來讓我們可以跟github同步，我原本以為可以直接在heroku網頁做改動，可是必須要有一個主機才可以實現這個功能，所以不能直接改還是要在github用上船的，讓我有一點小失望，我覺得heroku網站的用意應該是，讓我們有兩個倉儲可以防止，其中一個資料消失時還有備用的。&lt;/p&gt;</content><category term="W12"></category></entry><entry><title>Week-11</title><link href="./2018-Fall-Project-Blog-W11.html" rel="alternate"></link><published>2018-11-26T13:20:00+08:00</published><updated>2018-11-26T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-11-26:./2018-Fall-Project-Blog-W11.html</id><summary type="html">&lt;p&gt;heroky 課程解說&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;heroky 課程解說&lt;/p&gt;
 
 
@@ -48,12 +53,17 @@
 &lt;p&gt;5.把start.bat裡加入(%Disk%:\heroku\bin;)&lt;/p&gt;
 &lt;p&gt;6.重新開啟後就可以使用heroku指令&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;今天老師教的是把我們的隨身系統更新一個heroku指令，在為什麼加入這個軟件呢，因為我們之後每一組，都會用到heroku的網站，要上傳到heroku的網站指令是不同的，所以需要下載新的heroku的插件，雖然跟git指令有一點類似，只是heroku網站可以在線上改，下禮拜才會開始用heroku網站，所以我很期待這個功能。&lt;/p&gt;</content><category term="W11"></category></entry><entry><title>Week-10</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W10.html" rel="alternate"></link><published>2018-11-19T13:20:00+08:00</published><updated>2018-11-19T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-11-19:/site-s40723210/blog/2018-Fall-Project-Blog-W10.html</id><summary type="html">&lt;p&gt;eric6 課程講解&lt;/p&gt;
+&lt;p&gt;今天老師教的是把我們的隨身系統更新一個heroku指令，在為什麼加入這個軟件呢，因為我們之後每一組，都會用到heroku的網站，要上傳到heroku的網站指令是不同的，所以需要下載新的heroku的插件，雖然跟git指令有一點類似，只是heroku網站可以在線上改，下禮拜才會開始用heroku網站，所以我很期待這個功能。&lt;/p&gt;</content><category term="W11"></category></entry><entry><title>Week-10</title><link href="./2018-Fall-Project-Blog-W10.html" rel="alternate"></link><published>2018-11-19T13:20:00+08:00</published><updated>2018-11-19T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-11-19:./2018-Fall-Project-Blog-W10.html</id><summary type="html">&lt;p&gt;eric6 課程講解&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;eric6 課程講解&lt;/p&gt;
 
 
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;這禮拜是學長來跟我們說明如何利用新版 P37-18.11 中的 eric6 軟體，可以利用內部的一些特殊模組，來做出一些連動的東西，而這次學長教的是利用slider、porgress bar、button來做一個小小的應用程式，我覺得很有趣可以自己創作想要的東西，像是登入器就可以利用eric6來做出來，可以認真的來學習這個軟體。&lt;/p&gt;</content><category term="W10"></category></entry><entry><title>Week-8</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W8.html" rel="alternate"></link><published>2018-10-29T13:20:00+08:00</published><updated>2018-10-29T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-29:/site-s40723210/blog/2018-Fall-Project-Blog-W8.html</id><summary type="html">&lt;p&gt;git remote add指令&lt;/p&gt;
+&lt;p&gt;這禮拜是學長來跟我們說明如何利用新版 P37-18.11 中的 eric6 軟體，可以利用內部的一些特殊模組，來做出一些連動的東西，而這次學長教的是利用slider、porgress bar、button來做一個小小的應用程式，我覺得很有趣可以自己創作想要的東西，像是登入器就可以利用eric6來做出來，可以認真的來學習這個軟體。&lt;/p&gt;</content><category term="W10"></category></entry><entry><title>Week-17</title><link href="./2018-Fall-Project-Blog-W17.html" rel="alternate"></link><published>2018-10-29T13:20:00+08:00</published><updated>2018-10-29T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-10-29:./2018-Fall-Project-Blog-W17.html</id><summary type="html">&lt;p&gt;python 語法教學&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;python 語法教學&lt;/p&gt;
+
+
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;補課三次，#判斷式if #while 迴圈 #for 迴圈 # 集合的運用 #字典的運用 #有序可變動列表 List #有序不可變動列表 Tuple，以上是我整理學長所教的大鋼，基本上就是講解python的語法和運用，還有稍微講一下遊戲中的語法應用，這些python我有自己先學習一小部份了，所以學長講的我就聽得懂，只是有些我沒自學的還是要花時間搞懂。&lt;/p&gt;</content><category term="W17"></category></entry><entry><title>Week-8</title><link href="./2018-Fall-Project-Blog-W8.html" rel="alternate"></link><published>2018-10-29T13:20:00+08:00</published><updated>2018-10-29T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-10-29:./2018-Fall-Project-Blog-W8.html</id><summary type="html">&lt;p&gt;git remote add指令&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;git remote add指令&lt;/p&gt;
 
 
@@ -64,12 +74,7 @@
 &lt;p&gt;4.git remote add cp2018 &lt;a href="https://gitlab.com/s40723210/cp2018-s40723210"&gt;https://gitlab.com/s40723210/cp2018-s40723210&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;5.git push cp2018 完成後就同步了&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;第八周開始使用gitlab，這樣可以同時push兩個不同的倉儲，就可以避免一個倉儲壞掉了就沒有了，同步的時候有點難，跟githud指令不太一樣，所以我把兩個帳號密碼都用成一樣的，這樣就不太會搞混和忘記了。&lt;/p&gt;</content><category term="W8"></category></entry><entry><title>Week-17</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W8.html" rel="alternate"></link><published>2018-10-29T13:20:00+08:00</published><updated>2018-10-29T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-29:/site-s40723210/blog/2018-Fall-Project-Blog-W8.html</id><summary type="html">&lt;p&gt;python 語法教學&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;python 語法教學&lt;/p&gt;
-
-
-&lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;補課三次，#判斷式if #while 迴圈 #for 迴圈 # 集合的運用 #字典的運用 #有序可變動列表 List #有序不可變動列表 Tuple，以上是我整理學長所教的大鋼，基本上就是講解python的語法和運用，還有稍微講一下遊戲中的語法應用，這些python我有自己先學習一小部份了，所以學長講的我就聽得懂，只是有些我沒自學的還是要花時間搞懂。&lt;/p&gt;</content><category term="W8"></category></entry><entry><title>Week-7</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W7.html" rel="alternate"></link><published>2018-10-22T13:20:00+08:00</published><updated>2018-10-22T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-22:/site-s40723210/blog/2018-Fall-Project-Blog-W7.html</id><summary type="html">&lt;p&gt;github問題&lt;/p&gt;
+&lt;p&gt;第八周開始使用gitlab，這樣可以同時push兩個不同的倉儲，就可以避免一個倉儲壞掉了就沒有了，同步的時候有點難，跟githud指令不太一樣，所以我把兩個帳號密碼都用成一樣的，這樣就不太會搞混和忘記了。&lt;/p&gt;</content><category term="W8"></category></entry><entry><title>Week-7</title><link href="./2018-Fall-Project-Blog-W7.html" rel="alternate"></link><published>2018-10-22T13:20:00+08:00</published><updated>2018-10-22T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-10-22:./2018-Fall-Project-Blog-W7.html</id><summary type="html">&lt;p&gt;github問題&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;github問題&lt;/p&gt;
 
 
@@ -79,7 +84,7 @@
 &lt;p&gt;3.開始教學如何使用Fossil SCM，來更新網頁&lt;/p&gt;
 &lt;p&gt;4.如果githud之後都不能使用就只能用Fossil SCM&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;由於github在這禮拜突然故障，所以老師找出其他方法解決並探討，剛開始會發現github沒辦法登入，聽到老師說才知道是壞掉了，希望可以趕快回復，這樣就不用讓我們使用Fossli SCM 了。&lt;/p&gt;</content><category term="W7"></category></entry><entry><title>Week-6</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W6.html" rel="alternate"></link><published>2018-10-15T13:20:00+08:00</published><updated>2018-10-15T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-15:/site-s40723210/blog/2018-Fall-Project-Blog-W6.html</id><summary type="html">&lt;p&gt;修正bug的發生&lt;/p&gt;
+&lt;p&gt;由於github在這禮拜突然故障，所以老師找出其他方法解決並探討，剛開始會發現github沒辦法登入，聽到老師說才知道是壞掉了，希望可以趕快回復，這樣就不用讓我們使用Fossli SCM 了。&lt;/p&gt;</content><category term="W7"></category></entry><entry><title>Week-6</title><link href="./2018-Fall-Project-Blog-W6.html" rel="alternate"></link><published>2018-10-15T13:20:00+08:00</published><updated>2018-10-15T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-10-15:./2018-Fall-Project-Blog-W6.html</id><summary type="html">&lt;p&gt;修正bug的發生&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;修正bug的發生&lt;/p&gt;
 
 
@@ -90,7 +95,7 @@
 &lt;p&gt;4.到自己的site-s40723210，打開flaskapp.py把裡面刪掉&lt;/p&gt;
 &lt;p&gt;5.貼上，Save &amp;gt; git push&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;第六周開始強調要升級，最新的CMSimfly倉儲中的flaskapp.py，因為這幾周來同學碰到了許多的bug，所以老師有更新很多處理bug的東西，我們就要去更新才不會出現這一些bug。&lt;/p&gt;</content><category term="W6"></category></entry><entry><title>Week-5</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W5.html" rel="alternate"></link><published>2018-10-08T13:20:00+08:00</published><updated>2018-10-08T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-08:/site-s40723210/blog/2018-Fall-Project-Blog-W5.html</id><summary type="html">&lt;p&gt;python 課程說明&lt;/p&gt;
+&lt;p&gt;第六周開始強調要升級，最新的CMSimfly倉儲中的flaskapp.py，因為這幾周來同學碰到了許多的bug，所以老師有更新很多處理bug的東西，我們就要去更新才不會出現這一些bug。&lt;/p&gt;</content><category term="W6"></category></entry><entry><title>Week-5</title><link href="./2018-Fall-Project-Blog-W5.html" rel="alternate"></link><published>2018-10-08T13:20:00+08:00</published><updated>2018-10-08T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-10-08:./2018-Fall-Project-Blog-W5.html</id><summary type="html">&lt;p&gt;python 課程說明&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;python 課程說明&lt;/p&gt;
 
 
@@ -100,7 +105,7 @@
 &lt;p&gt;3.開始練習，並且把[Ex1]  [Ex2]  [Ex3]  [Ex4]給學會&lt;/p&gt;
 &lt;p&gt;4.我在&lt;a href="https://mdecp2018.github.io/site-s40723210/content/%E7%B7%B4%E7%BF%92-1.html"&gt;Python 手冊&lt;/a&gt; 中有練習，可以到那裡參考&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;第五周又要開始學新的東西了，現在要學python指令了，一個未完又要開始學另一個了，實在是有點太多了，因為我完全就是沒有底子的人，所以要把指令都用熟練，是要花很多時間的，我只能盡力而為了。&lt;/p&gt;</content><category term="W5"></category></entry><entry><title>Week-4</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W4.html" rel="alternate"></link><published>2018-10-01T13:20:00+08:00</published><updated>2018-10-01T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-01:/site-s40723210/blog/2018-Fall-Project-Blog-W4.html</id><summary type="html">&lt;p&gt;reveal 課程說明&lt;/p&gt;
+&lt;p&gt;第五周又要開始學新的東西了，現在要學python指令了，一個未完又要開始學另一個了，實在是有點太多了，因為我完全就是沒有底子的人，所以要把指令都用熟練，是要花很多時間的，我只能盡力而為了。&lt;/p&gt;</content><category term="W5"></category></entry><entry><title>Week-4</title><link href="./2018-Fall-Project-Blog-W4.html" rel="alternate"></link><published>2018-10-01T13:20:00+08:00</published><updated>2018-10-01T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-10-01:./2018-Fall-Project-Blog-W4.html</id><summary type="html">&lt;p&gt;reveal 課程說明&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;reveal 課程說明&lt;/p&gt;
 
 
@@ -111,12 +116,12 @@
 &lt;p&gt;4.修改reveal投影片的封面標題&lt;/p&gt;
 &lt;p&gt;5.Save &amp;gt; git push&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;第四周是要開始學習如何更改reveal投影片，跟改CMSimfly完全不相同，是要以 Leo Editor來更改內容，一開始我完全的不懂該怎麼使用，我就一直看老師的操作影片，慢慢的我就知道該如何使用了。&lt;/p&gt;</content><category term="W4"></category></entry><entry><title>Week-3</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W3.html" rel="alternate"></link><published>2018-09-24T13:20:00+08:00</published><updated>2018-09-24T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-09-24:/site-s40723210/blog/2018-Fall-Project-Blog-W3.html</id><summary type="html">&lt;p&gt;2018/09/24中秋節放假~&lt;/p&gt;
+&lt;p&gt;第四周是要開始學習如何更改reveal投影片，跟改CMSimfly完全不相同，是要以 Leo Editor來更改內容，一開始我完全的不懂該怎麼使用，我就一直看老師的操作影片，慢慢的我就知道該如何使用了。&lt;/p&gt;</content><category term="W4"></category></entry><entry><title>Week-3</title><link href="./2018-Fall-Project-Blog-W3.html" rel="alternate"></link><published>2018-09-24T13:20:00+08:00</published><updated>2018-09-24T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-09-24:./2018-Fall-Project-Blog-W3.html</id><summary type="html">&lt;p&gt;2018/09/24中秋節放假~&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2018/09/24中秋節放假~&lt;/p&gt;
 
 
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;我自己有操作更改網站標題，基本上都是一樣的操作流程，我有拍影片可以到我的網站看。&lt;/p&gt;</content><category term="W3"></category></entry><entry><title>Week-2</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W2.html" rel="alternate"></link><published>2018-09-17T13:20:00+08:00</published><updated>2018-09-17T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-09-17:/site-s40723210/blog/2018-Fall-Project-Blog-W2.html</id><summary type="html">&lt;p&gt;如何領取作業, 如何管理 CMSimfly 作業倉儲&lt;/p&gt;
+&lt;p&gt;我自己有操作更改網站標題，基本上都是一樣的操作流程，我有拍影片可以到我的網站看。&lt;/p&gt;</content><category term="W3"></category></entry><entry><title>Week-2</title><link href="./2018-Fall-Project-Blog-W2.html" rel="alternate"></link><published>2018-09-17T13:20:00+08:00</published><updated>2018-09-17T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-09-17:./2018-Fall-Project-Blog-W2.html</id><summary type="html">&lt;p&gt;如何領取作業, 如何管理 CMSimfly 作業倉儲&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;如何領取作業, 如何管理 CMSimfly 作業倉儲&lt;/p&gt;
 
 
@@ -126,7 +131,7 @@
 &lt;p&gt;3.在site-s40723210的 settings &amp;gt; Branches &amp;gt; 把branches改為gh-pages&lt;/p&gt;
 &lt;p&gt;4.之後就可以開始更新網址了&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;第二週學習如何管理期中作業倉儲的網站內容以及投影片內容，每週必須放上進度，要時常去管理自己的CMSimfly網站，做法是平常上課教的，可以一步一步來完成。&lt;/p&gt;</content><category term="W2"></category></entry><entry><title>Week-1</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W1.html" rel="alternate"></link><published>2018-09-10T13:20:00+08:00</published><updated>2018-09-10T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-09-10:/site-s40723210/blog/2018-Fall-Project-Blog-W1.html</id><summary type="html">&lt;p&gt;如何利用 p37 中的 git 建立個人的 Github Pages 網站&lt;/p&gt;
+&lt;p&gt;第二週學習如何管理期中作業倉儲的網站內容以及投影片內容，每週必須放上進度，要時常去管理自己的CMSimfly網站，做法是平常上課教的，可以一步一步來完成。&lt;/p&gt;</content><category term="W2"></category></entry><entry><title>Week-1</title><link href="./2018-Fall-Project-Blog-W1.html" rel="alternate"></link><published>2018-09-10T13:20:00+08:00</published><updated>2018-09-10T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:None,2018-09-10:./2018-Fall-Project-Blog-W1.html</id><summary type="html">&lt;p&gt;如何利用 p37 中的 git 建立個人的 Github Pages 網站&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;如何利用 p37 中的 git 建立個人的 Github Pages 網站&lt;/p&gt;
 
 
@@ -138,7 +143,7 @@
 &lt;p&gt;4.從2018fall資料夾複製裡面的檔案，排除.git和README.me，並貼到自己的資料夾內&lt;/p&gt;
 &lt;p&gt;5.git status(檢查狀態)&amp;gt;git add .(增加)&amp;gt;git commit -m "名稱"( 提交)&amp;gt;git push (推送)&lt;/p&gt;
 &lt;h2&gt;心得:&lt;/h2&gt;
-&lt;p&gt;第一週開始接觸github有點不習慣，因為我完全沒有碰過，老師說的我完全的聽不懂，但是之後其實只要看教學影片慢慢的就會了，所以我覺得應該是撐得住。&lt;/p&gt;</content><category term="W1"></category></entry><entry><title>2018 Fall 分組網誌</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>NFUMDE</name></author><id>tag:mdecp2018.github.io,2018-09-10:/site-s40723210/blog/2018-Fall-Project-Blog.html</id><summary type="html">&lt;p&gt;2018 Fall 開始將網際內容管理、投影片與網誌進行整合.&lt;/p&gt;
+&lt;p&gt;第一週開始接觸github有點不習慣，因為我完全沒有碰過，老師說的我完全的聽不懂，但是之後其實只要看教學影片慢慢的就會了，所以我覺得應該是撐得住。&lt;/p&gt;</content><category term="W1"></category></entry><entry><title>2018 Fall 分組網誌</title><link href="./2018-Fall-Project-Blog.html" rel="alternate"></link><published>2018-09-10T11:00:00+08:00</published><updated>2018-09-10T11:00:00+08:00</updated><author><name>NFUMDE</name></author><id>tag:None,2018-09-10:./2018-Fall-Project-Blog.html</id><summary type="html">&lt;p&gt;2018 Fall 開始將網際內容管理、投影片與網誌進行整合.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2018 Fall 開始將網際內容管理、投影片與網誌進行整合.&lt;/p&gt;
 
 
