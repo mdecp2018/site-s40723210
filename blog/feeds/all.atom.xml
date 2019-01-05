@@ -1,5 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>s40723210 網誌</title><link href="https://mdecp2018.github.io/site-s40723210/blog/" rel="alternate"></link><link href="https://mdecp2018.github.io/site-s40723210/blog/feeds/all.atom.xml" rel="self"></link><id>https://mdecp2018.github.io/site-s40723210/blog/</id><updated>2018-10-29T13:20:00+08:00</updated><entry><title>Week-8</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W8.html" rel="alternate"></link><published>2018-10-29T13:20:00+08:00</published><updated>2018-10-29T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-29:/site-s40723210/blog/2018-Fall-Project-Blog-W8.html</id><summary type="html">&lt;p&gt;git remote add指令&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>s40723210 網誌</title><link href="https://mdecp2018.github.io/site-s40723210/blog/" rel="alternate"></link><link href="https://mdecp2018.github.io/site-s40723210/blog/feeds/all.atom.xml" rel="self"></link><id>https://mdecp2018.github.io/site-s40723210/blog/</id><updated>2018-12-24T13:20:00+08:00</updated><entry><title>Week-15</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W15.html" rel="alternate"></link><published>2018-12-24T13:20:00+08:00</published><updated>2018-12-24T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-12-24:/site-s40723210/blog/2018-Fall-Project-Blog-W15.html</id><summary type="html">&lt;p&gt;分組協同報告&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;分組協同報告&lt;/p&gt;
+
+
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;為了要期末報告，老師就教我們用一種，分組協同報告的東西，而這種東西呢是利用，leo-editor來進行協同的，因為老師是在二年級上課的時候，操作和錄影還有講解，所以我們要自己看，以前老師拍的影片，而這種分組協同報告，是每個組員update都會有紀錄的東西，就可以清楚的知道誰做了什麼，也可以有紀錄查看以前的資料，就可以避免一次做錯就要全部重做。&lt;/p&gt;</content><category term="W15"></category></entry><entry><title>Week-14</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W14.html" rel="alternate"></link><published>2018-12-17T13:20:00+08:00</published><updated>2018-12-17T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-12-17:/site-s40723210/blog/2018-Fall-Project-Blog-W14.html</id><summary type="html">&lt;p&gt;分組倉儲 login&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;分組倉儲 login&lt;/p&gt;
+
+
+&lt;h2&gt;checklogin 的輸入條件&lt;/h2&gt;
+&lt;p&gt;1.從分組倉儲的cmsimfly.leo用leo-editor編輯&lt;/p&gt;
+&lt;p&gt;2.搜尋check login&lt;/p&gt;
+&lt;p&gt;3.新增if/elif判斷式&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;目前我有把一些kmolgame的範例，改成我想做的小遊戲，可是有很多指令是範例裡面沒有的，剛好今天是交python語法，我們學到的東西是if判斷，當我們在密碼輸入bg3時會出現hellow world，有多寫一個else，就是用來判斷輸入的，在遊戲可以做出猜數字的程式，有一點用不太到呢。&lt;/p&gt;</content><category term="W14"></category></entry><entry><title>Week-13</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W13.html" rel="alternate"></link><published>2018-12-10T13:20:00+08:00</published><updated>2018-12-10T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-12-10:/site-s40723210/blog/2018-Fall-Project-Blog-W13.html</id><summary type="html">&lt;p&gt;Ggame 課程教學&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;Ggame 課程教學&lt;/p&gt;
+
+
+&lt;h2&gt;kmolgame 小遊戲&lt;/h2&gt;
+&lt;p&gt;1.開啟P37-18.11&lt;/p&gt;
+&lt;p&gt;2.用leo-editor開啟kmolgame的kmolgame.leo&lt;/p&gt;
+&lt;p&gt;3.從最簡單的Ggame範例複製一個@clean simple1.html&lt;/p&gt;
+&lt;p&gt;4.然後就可以開始更改了&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;我們的專題就是一個小遊戲，老師有用了一個kmolgame的leo來讓我們了解，但是說實在的，我們頂多改內建的程式變換圖片或速度或者是大小而已，要我們做出一個小遊戲的話，要有說明那些指令是做甚麼的，可是說明大多都是英文，而且我們對python的語法一竅不通，是需要一點時間才能理解的，所以可能我們做出來的遊戲會遇到一堆的問題。&lt;/p&gt;</content><category term="W13"></category></entry><entry><title>Week-12</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W12.html" rel="alternate"></link><published>2018-12-03T13:20:00+08:00</published><updated>2018-12-03T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-12-03:/site-s40723210/blog/2018-Fall-Project-Blog-W12.html</id><summary type="html">&lt;p&gt;heroku 同步倉儲&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;heroku 同步倉儲&lt;/p&gt;
+
+
+&lt;h2&gt;雲端同步github倉儲&lt;/h2&gt;
+&lt;p&gt;1.創建heroku帳號&lt;/p&gt;
+&lt;p&gt;2.新增app cp2018-bg3&lt;/p&gt;
+&lt;p&gt;3.輸入heroku login登入&lt;/p&gt;
+&lt;p&gt;4.登入完git clone https://git.heroku.com/cp2018-bg3.git&lt;/p&gt;
+&lt;p&gt;5.把倉儲裡的東西都放進去&lt;/p&gt;
+&lt;p&gt;4.更新倉儲加入 "runtime.txt" "Procfile" "requirements.txt"&lt;/p&gt;
+&lt;p&gt;5.一樣步驟git push，連結githu倉儲&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;而現在要開始辦heroku網頁帳號，由組長來創一個app，來讓我們可以跟github同步，我原本以為可以直接在heroku網頁做改動，可是必須要有一個主機才可以實現這個功能，所以不能直接改還是要在github用上船的，讓我有一點小失望，我覺得heroku網站的用意應該是，讓我們有兩個倉儲可以防止，其中一個資料消失時還有備用的。&lt;/p&gt;</content><category term="W12"></category></entry><entry><title>Week-11</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W11.html" rel="alternate"></link><published>2018-11-26T13:20:00+08:00</published><updated>2018-11-26T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-11-26:/site-s40723210/blog/2018-Fall-Project-Blog-W11.html</id><summary type="html">&lt;p&gt;heroky 課程解說&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;heroky 課程解說&lt;/p&gt;
+
+
+&lt;h2&gt;更新heroku指令&lt;/h2&gt;
+&lt;p&gt;1.先到自己的分組倉儲&lt;/p&gt;
+&lt;p&gt;2.git clone https://github.com/mdecp2018/finalproject-bg3&lt;/p&gt;
+&lt;p&gt;3.之後的步驟跟以前一樣更新&lt;/p&gt;
+&lt;p&gt;4.下載heroku系統，放入p37內&lt;/p&gt;
+&lt;p&gt;5.把start.bat裡加入(%Disk%:\heroku\bin;)&lt;/p&gt;
+&lt;p&gt;6.重新開啟後就可以使用heroku指令&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;今天老師教的是把我們的隨身系統更新一個heroku指令，在為什麼加入這個軟件呢，因為我們之後每一組，都會用到heroku的網站，要上傳到heroku的網站指令是不同的，所以需要下載新的heroku的插件，雖然跟git指令有一點類似，只是heroku網站可以在線上改，下禮拜才會開始用heroku網站，所以我很期待這個功能。&lt;/p&gt;</content><category term="W11"></category></entry><entry><title>Week-10</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W10.html" rel="alternate"></link><published>2018-11-19T13:20:00+08:00</published><updated>2018-11-19T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-11-19:/site-s40723210/blog/2018-Fall-Project-Blog-W10.html</id><summary type="html">&lt;p&gt;eric6 課程講解&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;eric6 課程講解&lt;/p&gt;
+
+
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;這禮拜是學長來跟我們說明如何利用新版 P37-18.11 中的 eric6 軟體，可以利用內部的一些特殊模組，來做出一些連動的東西，而這次學長教的是利用slider、porgress bar、button來做一個小小的應用程式，我覺得很有趣可以自己創作想要的東西，像是登入器就可以利用eric6來做出來，可以認真的來學習這個軟體。&lt;/p&gt;</content><category term="W10"></category></entry><entry><title>Week-8</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W8.html" rel="alternate"></link><published>2018-10-29T13:20:00+08:00</published><updated>2018-10-29T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-29:/site-s40723210/blog/2018-Fall-Project-Blog-W8.html</id><summary type="html">&lt;p&gt;git remote add指令&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;git remote add指令&lt;/p&gt;
+
+
+&lt;h2&gt;同步倉儲gitlab&lt;/h2&gt;
+&lt;p&gt;1.先到&lt;a href="https://about.gitlab.com/"&gt;gitlab&lt;/a&gt;可以用自己的github帳號登入&lt;/p&gt;
+&lt;p&gt;2.之後在gitlab創建一個倉儲&lt;/p&gt;
+&lt;p&gt;3.然後到個人資料設定密碼，跟github密碼一樣&lt;/p&gt;
+&lt;p&gt;4.git remote add cp2018 &lt;a href="https://gitlab.com/s40723210/cp2018-s40723210"&gt;https://gitlab.com/s40723210/cp2018-s40723210&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;5.git push cp2018 完成後就同步了&lt;/p&gt;
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;第八周開始使用gitlab，這樣可以同時push兩個不同的倉儲，就可以避免一個倉儲壞掉了就沒有了，同步的時候有點難，跟githud指令不太一樣，所以我把兩個帳號密碼都用成一樣的，這樣就不太會搞混和忘記了。&lt;/p&gt;</content><category term="W8"></category></entry><entry><title>Week-17</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W8.html" rel="alternate"></link><published>2018-10-29T13:20:00+08:00</published><updated>2018-10-29T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-29:/site-s40723210/blog/2018-Fall-Project-Blog-W8.html</id><summary type="html">&lt;p&gt;python 語法教學&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;python 語法教學&lt;/p&gt;
+
+
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;補課三次，#判斷式if #while 迴圈 #for 迴圈 # 集合的運用 #字典的運用 #有序可變動列表 List #有序不可變動列表 Tuple，以上是我整理學長所教的大鋼，基本上就是講解python的語法和運用，還有稍微講一下遊戲中的語法應用，這些python我有自己先學習一小部份了，所以學長講的我就聽得懂，只是有些我沒自學的還是要花時間搞懂。&lt;/p&gt;</content><category term="W8"></category></entry><entry><title>Week-17</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W8.html" rel="alternate"></link><published>2018-10-29T13:20:00+08:00</published><updated>2018-10-29T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-29:/site-s40723210/blog/2018-Fall-Project-Blog-W8.html</id><summary type="html">&lt;p&gt;python 語法教學&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;python 語法教學&lt;/p&gt;
+
+
+&lt;h2&gt;心得:&lt;/h2&gt;
+&lt;p&gt;補課三次，#判斷式if #while 迴圈 #for 迴圈 # 集合的運用 #字典的運用 #有序可變動列表 List #有序不可變動列表 Tuple，以上是我整理學長所教的大鋼，基本上就是講解python的語法和運用，還有稍微講一下遊戲中的語法應用，這些python我有自己先學習一小部份了，所以學長講的我就聽得懂，只是有些我沒自學的還是要花時間搞懂。&lt;/p&gt;</content><category term="W8"></category></entry><entry><title>Week-8</title><link href="https://mdecp2018.github.io/site-s40723210/blog/2018-Fall-Project-Blog-W8.html" rel="alternate"></link><published>2018-10-29T13:20:00+08:00</published><updated>2018-10-29T13:20:00+08:00</updated><author><name>s40723210</name></author><id>tag:mdecp2018.github.io,2018-10-29:/site-s40723210/blog/2018-Fall-Project-Blog-W8.html</id><summary type="html">&lt;p&gt;git remote add指令&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;git remote add指令&lt;/p&gt;
 
 
